@@ -14,19 +14,60 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "parameter.h"
 
 int main(int argc, char **argv)
 {
     printf("******To Obtain Product Params Start******\n");
-    printf("The VersionID is [%s]\n", GetVersionId());
-    printf("The Sdk Api Level is [%s]\n", GetFirstApiLevel());
-    printf("The Security Patch is [%s]\n", GetSecurityPatchTag());
-    printf("The AbiList is [%s]\n", GetAbiList());
-    printf("The OS Version is [%s]\n", GetDisplayVersion());
-    printf("The BuildRootHash is [%s]\n", GetBuildRootHash());
-    printf("The HardwareModel is [%s]\n", GetHardwareModel());
-    printf("The HardwareProfile is [%s]\n", GetHardwareProfile());
+    char* versionId = GetVersionId();
+    if (versionId != nullptr) {
+        printf("The VersionID is [%s]\n", versionId);
+        free(versionId);
+    }
+
+    char* sdkLevel = GetFirstApiLevel();
+    if (sdkLevel != nullptr) {
+        printf("The Sdk Api Level is [%s]\n", sdkLevel);
+        free(sdkLevel);
+    }
+
+    char* securityPatchTag = GetSecurityPatchTag();
+    if (securityPatchTag != nullptr) {
+        printf("The Security Patch is [%s]\n", securityPatchTag);
+        free(securityPatchTag);
+    }
+
+    char* abiList = GetAbiList();
+    if (abiList != nullptr) {
+        printf("The AbiList is [%s]\n", abiList);
+        free(abiList);
+    }
+
+    char* displayVersion = GetDisplayVersion();
+    if (displayVersion != nullptr) {
+        printf("The OS Version is [%s]\n", displayVersion);
+        free(displayVersion);
+    }
+
+    char* buildRootHash = GetBuildRootHash();
+    if (buildRootHash != nullptr) {
+        printf("The BuildRootHash is [%s]\n", buildRootHash);
+        free(buildRootHash);
+    }
+
+    char* hardWareModel = GetHardwareModel();
+    if (hardWareModel != nullptr) {
+        printf("The HardwareModel is [%s]\n", hardWareModel);
+        free(hardWareModel);
+    }
+
+    char* hardWareProfile = GetHardwareProfile();
+    if (hardWareProfile != nullptr) {
+        printf("The HardwareProfile is [%s]\n", hardWareProfile);
+        free(hardWareProfile);
+    }
+
     printf("******To Obtain Product Params End  ******\n");
     return 0;
 }
