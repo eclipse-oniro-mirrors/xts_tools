@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 Huawei Device Co., Ltd.
+ * Copyright (c) 2020-2021 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -15,7 +15,7 @@
 
 #include "bootstrap_service.h"
 #include "samgr_lite.h"
-#include <hos_init.h>
+#include <ohos_init.h>
 #include <securec.h>
 #include <los_base.h>
 #include "service.h"
@@ -57,12 +57,11 @@ static BOOL Initialize(Service *service, Identity identity)
     int times = 0;
     while (times < MAXIMUM_TRY_TIMES) {
         int ret = SAMGR_SendRequest(&testService->identity, &request, (Handler)MessageHandle);
-        if (ret != 0) {
-            times++;
-            ret = SAMGR_SendRequest(&testService->identity, &request, (Handler)MessageHandle);
-        } else {
+        if (ret == 0) {
             return TRUE;
         }
+        times++;
+        ret = SAMGR_SendRequest(&testService->identity, &request, (Handler)MessageHandle);
     }
     return FALSE;
 };
@@ -70,6 +69,9 @@ static BOOL Initialize(Service *service, Identity identity)
 static BOOL MessageHandle(Service *service, Request *request)
 {
     TestService *testService = (TestService *)service;
+    if (request == NULL) {
+        return FALSE;
+    }
     switch (request->msgId) {
         case MSG_START_TEST:
             if ((testService->flag & TEST_FLAG) != TEST_FLAG) {
@@ -86,7 +88,7 @@ static BOOL MessageHandle(Service *service, Request *request)
 
 static TaskConfig GetTaskConfig(Service *service)
 {
-    TaskConfig config = {LEVEL_MIDDLE, PRI_NORMAL, 0x1000, 20, SINGLE_TASK};
+    TaskConfig config = {LEVEL_MIDDLE, PRI_NORMAL, 0x1000, TASK_QUEUE_SIZE, SINGLE_TASK};
     (void)service;
     return config;
 };

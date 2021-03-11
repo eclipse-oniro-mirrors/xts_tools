@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-# Copyright (c) 2020 Huawei Device Co., Ltd.
+# Copyright (c) 2020-2021 Huawei Device Co., Ltd.
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -12,25 +12,25 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-BASE_HOME=$(dirname $(dirname $(dirname $(cd `dirname $0`; pwd))))
+BASE_HOME=$(dirname $(dirname $(dirname $(dirname $(cd `dirname $0`; pwd)))))
 PRODUCT=
 PLATFORM=
-PLATFORM_PARAM=
 TARGET=
 TARGET_PARAM=
+XTS=
 WIFIIOT_OUTFILE=Hi3861_wifiiot_app_allinone.bin
 DIST_DIR=$BASE_HOME/dist
-WIFIIOT_MODULES="${WIFIIOT_MODULES},//test/xts/acts/communication_lite/lwip_hal:ActsLwipTest"
-WIFIIOT_MODULES="${WIFIIOT_MODULES},//test/xts/acts/communication_lite/softbus_hal:ActsSoftBusTest"
-WIFIIOT_MODULES="${WIFIIOT_MODULES},//test/xts/acts/communication_lite/wifiservice_hal:ActsWifiServiceTest"
-WIFIIOT_MODULES="${WIFIIOT_MODULES},//test/xts/acts/utils_lite/parameter_hal:ActsParameterTest"
-WIFIIOT_MODULES="${WIFIIOT_MODULES},//test/xts/acts/utils_lite/utilsfile_hal:ActsUtilsFileTest"
-WIFIIOT_MODULES="${WIFIIOT_MODULES},//test/xts/acts/iot_hardware_lite/wifiiot_hal:ActsWifiIotTest"
-WIFIIOT_MODULES="${WIFIIOT_MODULES},//test/xts/acts/kernel_lite/kernelcmsis_hal:ActsCMSISTest"
-WIFIIOT_MODULES="${WIFIIOT_MODULES},//test/xts/acts/hiviewdfx_lite/dfx_hal:ActsDfxFuncTest"
-WIFIIOT_MODULES="${WIFIIOT_MODULES},//test/xts/acts/utils_lite/kvstore_hal:ActsKvStoreTest"
-WIFIIOT_MODULES="${WIFIIOT_MODULES},//test/xts/acts/security_lite/datahuks_hal:ActsSecurityDataTest"
-WIFIIOT_MODULES="${WIFIIOT_MODULES},//test/xts/acts/distributedschedule_lite/samgr_hal:ActsSamgrTest"
+WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/communication_lite/lwip_hal:ActsLwipTest"
+WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/communication_lite/softbus_hal:ActsSoftBusTest"
+WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/communication_lite/wifiservice_hal:ActsWifiServiceTest"
+WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/utils_lite/parameter_hal:ActsParameterTest"
+WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/utils_lite/utilsfile_hal:ActsUtilsFileTest"
+WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/iot_hardware_lite/wifiiot_hal:ActsWifiIotTest"
+WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/kernel_lite/kernelcmsis_hal:ActsCMSISTest"
+WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/utils_lite/kvstore_hal:ActsKvStoreTest"
+WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/security_lite/datahuks_hal:ActsSecurityDataTest"
+WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/distributed_schedule_lite/samgr_hal:ActsSamgrTest"
+WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/update_lite/updater_hal:ActsUpdaterFuncTest"
 
 error_report() {
     echo "Error on line $1"
@@ -42,10 +42,12 @@ usage()
 {
   echo
   echo "USAGE"
-  echo "       ./build.sh product=PRODUCT [platform=PLATFORM] [target=TARGET]"
+  echo "       ./build.sh product=PRODUCT [platform=PLATFORM] [target=TARGET] xts=XTS"
   echo
   echo "                  product   : PRODUCT  product name, such as ipcamera or wifiiot"
-  echo "                  platform  : PLATFORM  the platform of device, such as hi3518ev300 hi3516dv300"
+  echo "                  platform  : PLATFORM  the platform of device"
+  echo "                  target    : TARGET   the target for build, such as //xts/acts/communication_lite/wifiaware_test."
+  echo "                  xts       : XTS   the name of xts, such as acts/hits etc."
   echo
   exit 1
 }
@@ -82,69 +84,94 @@ parse_cmdline()
                ;;
     target)    TARGET="$PARAM"
                ;;
+    xts)       XTS="$PARAM"
+               ;;
     *)   usage
          break;;
     esac
     shift
   done
-  if [ "$PRODUCT" = "" ];then
+  if [ "$PRODUCT" = "" ] || [ "$XTS" = "" ];then
     usage
   fi
   if [ "$PRODUCT" = "wifiiot" ];then
     PLATFORM="hi3861v100_liteos_riscv"
-    PLATFORM_PARAM=""
     if [ "$TARGET" = "" ];then
-      TARGET=$WIFIIOT_MODULES
+	  if [ "$XTS" = "acts" ];then
+         TARGET=$WIFIIOT_ACTS_MODULES
+	  elif [ "$XTS" = "hits" ];then
+	     TARGET=$WIFIIOT_HITS_MODULES
+	  fi
     fi
   elif [ "$PLATFORM" = "" ];then
     echo "platform is required, for product $PRODUCT"
     usage
-  else
-    PLATFORM_PARAM=" --platform $PLATFORM"
   fi
   if [ "$TARGET" != "" ];then
     TARGET_PARAM=" --target $TARGET"
   fi
 }
 
+
+
 build()
 {
-  out_dir="${BASE_HOME}/out/${PRODUCT}"
+  out_dir="${BASE_HOME}/out/hispark_pegasus/wifiiot_hispark_pegasus"
   suite_root_dir="${out_dir}/suites"
-  xts_root_dir="${suite_root_dir}/acts"
-  suite_out_dir="${xts_root_dir}/testcases"
-  suite_out_zip="${xts_root_dir}.zip"
-
   cd $BASE_HOME
   if [ "$PRODUCT" = "wifiiot" ]; then
-    rm -rf $DIST_DIR
+    if [ "$XTS" = "all" ];then
+	  build_wifiiot "acts" $WIFIIOT_ACTS_MODULES
+	  build_wifiiot "hits" $WIFIIOT_HITS_MODULES
+	  cp -rf ${DIST_DIR}/acts ${suite_root_dir}
+	  cd $suite_root_dir
+      zip -rv acts.zip acts
+      rm -rf $DIST_DIR
+    else
+	  build_wifiiot $XTS $TARGET
+      rm -rf $DIST_DIR
+    fi
+  else
+    python build.py ${PRODUCT}_${PLATFORM} -b debug --test xts $TARGET
+  fi
+}
+
+build_wifiiot()
+{
+    current_xts=$1
+    current_target=$2
+    xts_root_dir="${suite_root_dir}/${current_xts}"
+    suite_out_dir="${xts_root_dir}/testcases"
+    suite_out_zip="${xts_root_dir}.zip"
     mkdir -p $DIST_DIR
-    IFS=',' read -r -a array <<< "$TARGET"
+    IFS=',' read -r -a array <<< "${current_target}"
     echo "--------------------------------------------${array[@]}"
     set -e
-    mkdir -p ${DIST_DIR}/json
-	for index in "${!array[@]}"
-	do
-      python build.py $PRODUCT -b debug -t xts ${array[index]}
-      suite_build_target=`echo "${array[index]}" | awk -F "[/:]" '{print $NF}'`
+	mkdir -p ${DIST_DIR}/json
+    for element in ${array[*]}
+    do
+      python build.py -p wifiiot_hispark_pegasus@hisilicon -f --test xts ${element}
+      suite_build_target=`echo "${element}" | awk -F "[/:]" '{print $NF}'`
       module_list_file=$suite_out_dir/module_info.json
-      suite_module_name=`python test/xts/tools/build/utils.py --method_name get_modulename_by_buildtaregt --arguments module_list_file=${module_list_file}#build_target=${suite_build_target}`
-      subsystem_name=`python test/xts/tools/build/utils.py --method_name get_subsystem_name --arguments path=${array[index]}`
-      python test/xts/tools/build/utils.py --method_name record_testmodule_info --arguments build_target_name=${suite_module_name}#module_name=${suite_module_name}#subsystem_name=${subsystem_name}#suite_out_dir=${DIST_DIR}/json
+      suite_module_name=`python test/xts/tools/lite/build/utils.py --method_name get_modulename_by_buildtarget --arguments module_list_file=${module_list_file}#build_target=${suite_build_target}`
+      subsystem_name=`python test/xts/tools/lite/build/utils.py --method_name get_subsystem_name --arguments path=${element}`
+	  
+      python test/xts/tools/lite/build/utils.py --method_name record_testmodule_info --arguments build_target_name=${suite_module_name}#module_name=${suite_module_name}#subsystem_name=${subsystem_name}#suite_out_dir=${DIST_DIR}/json
+
       mkdir -p ${suite_out_dir}/${subsystem_name}
-      cp -f ${out_dir}/${WIFIIOT_OUTFILE} ${suite_out_dir}/${subsystem_name}/${suite_module_name}.bin
+      cp -f ${BASE_HOME}/out/hispark_pegasus/wifiiot_hispark_pegasus/${WIFIIOT_OUTFILE} ${suite_out_dir}/${subsystem_name}/${suite_module_name}.bin
       rm -f ${suite_out_dir}/${subsystem_name}/*.a
       cp -rf ${xts_root_dir}  ${DIST_DIR}
-	done
-    cp -rf ${DIST_DIR}/acts ${suite_root_dir}
+    done
+	
+    cp -rf ${DIST_DIR}/${current_xts} ${suite_root_dir}
+    rm -f ${suite_out_dir}/.bin
     cp -rf ${DIST_DIR}/module_info.json ${suite_out_dir}
     cd $suite_root_dir
     rm -f ${suite_out_zip}
-    zip -rv ${suite_out_zip} acts
-    rm -rf $DIST_DIR
-  else
-    python build.py ${PRODUCT}_${PARAM} -b debug -t xts
-  fi
+    zip -rv ${suite_out_zip} ${current_xts}
+    cd $BASE_HOME
+
 }
 
 echo $BASE_HOME

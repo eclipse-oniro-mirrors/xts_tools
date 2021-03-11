@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 Huawei Device Co., Ltd.
+ * Copyright (c) 2020-2021 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -18,11 +18,11 @@
 #ifndef HCTEST_REPEAT_TIMES
 #define HCTEST_REPEAT_TIMES 1
 #endif
-#include <hos_init.h>
+#include <ohos_init.h>
 #include "unity.h"
 #include "hctest_internal.h"
 
-#define CONST_EMPTY_STRING    "" 
+#define CONST_EMPTY_STRING    ""
 #define CONST_STRING_SPACE    " "
 #define CONST_DOT_STRING      ","
 
@@ -81,13 +81,13 @@ static void initSuite##test_suite(void) {\
 }\
 SYS_SERVICE_INIT(initSuite##test_suite);
 
-#define LITE_TEST_CASE(test_suite, case_object, test_level) \
+#define LITE_TEST_CASE(test_suite, case_object, test_flag) \
 static void case_object##_runTest(void);\
 static CTestCase create##case_object;\
 static void initCase##case_object(void) {\
     create##case_object.suite_name = #test_suite;\
     create##case_object.case_name = #case_object;\
-    create##case_object.level = test_level;\
+    create##case_object.flag = test_flag; \
     create##case_object.line_num = __LINE__; \
     create##case_object.lite_setup = test_suite##SetUp; \
     create##case_object.lite_teardown = test_suite##TearDown;\

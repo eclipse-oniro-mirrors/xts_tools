@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 Huawei Device Co., Ltd.
+ * Copyright (c) 2020-2021 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -33,19 +33,19 @@ struct TestResult {
 typedef struct CTestCase CTestCase;
 struct CTestCase {
     /**
-    * @brief test case level
+    * @brief test suite name
     * */
     const char *suite_name;
 
     /**
-    * @brief test case level
+    * @brief test case name
     * */
     const char *case_name;
 
     /**
-    * @brief test case level
+    * @brief test case flag
     * */
-    int8 level;
+    int32 flag;
 
     /**
     * @brief test case line number
@@ -75,15 +75,51 @@ struct CTestCase {
 };
 
 /**
+ * test type
+ */
+enum TestType {
+    Function = 1 << 8,
+    Performance = 2 << 8,
+    Power = 3 << 8,
+    Reliability = 4 << 8,
+    Security = 5 << 8,
+    Global = 6 << 8,
+    Compatibility = 7 << 8,
+    User = 8 << 8,
+    Standard = 9 << 8,
+    Safety = 10 << 8,
+    Resilience = 11 << 8
+};
+
+/**
+ * test size
+ */
+enum TestSize {
+    SmallTest = 1 << 4,
+    MediumTest = 2 << 4,
+    LargeTest = 3 << 4
+};
+
+/**
+  * test case level
+  */
+enum TestRank {
+    Level0 = 1,
+    Level1 = 2,
+    Level2 = 3,
+    Level3 = 4,
+    Level4 = 5
+};
+
+/**
   * test case level
   */
 enum TestLevel {
-    LEVEL0 = 0,
-    LEVEL1 = 1,
-    LEVEL2 = 2,
-    LEVEL3 = 3,
-    LEVEL4 = 4,
-    LEVEL_All = 9,
+    LEVEL0 = 1,
+    LEVEL1 = 2,
+    LEVEL2 = 3,
+    LEVEL3 = 4,
+    LEVEL4 = 5
 };
 
 typedef struct CTestSuite CTestSuite;
@@ -100,6 +136,7 @@ struct CTestSuite {
 #define TEST_FLAG 0x02
 #define MSG_START_TEST 1
 #define MAXIMUM_TRY_TIMES 3
+#define TASK_QUEUE_SIZE 20
 
 #ifdef __cplusplus
 #if __cplusplus

@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2020 Huawei Device Co., Ltd.
+Copyright (c) 2021 Huawei Device Co., Ltd.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -19,10 +19,14 @@ import os
 import fnmatch
 import sys
 import argparse
-import distutils.dir_util as dir_util
-import distutils.file_util as file_util
 import json
 import platform
+import subprocess
+
+import distutils.dir_util as dir_util
+import distutils.file_util as file_util
+from distutils.errors import DistutilsError
+
 
 # all sub system list, must be lowercase.
 _SUB_SYSTEM_LIST = [
@@ -37,18 +41,29 @@ _SUB_SYSTEM_LIST = [
     "multimedia",
     "hdf",
     "appexecfwk",
-    "distributedschedule",
+    "distributed_schedule",
     "startup",
     "sensors",
     "sample",
     "iot_hardware",
     "open_posix_testsuite",
+    "graphic",
+    "ace",
+    "applications",
+    "ai",
+    "global",
+    "telephony",
+    "dcts"
 ]
 
 _NO_FILTE_SUB_SYSTEM_LIST = [
     "kernel",
-    "open_posix_testsuite"
+    "open_posix_testsuite",
+    "sample",
+    "telephony",
+    "dcts"
 ]
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -115,20 +130,34 @@ def copy_file(output, sources="", source_dirs="", to_dir=True):
     except OSError:
         if not os.path.isdir(_output):
             raise
-    if _sources:
-        _copy_files(_sources.split(","), _output)
+    try:
+        if _sources:
+            _copy_files(_sources.split(","), _output)
 
-    if _source_dirs:
-        _copy_dir(_source_dirs.split(","), _output)
-
+        if _source_dirs:
+            _copy_dir(_source_dirs.split(","), _output)
+    except DistutilsError:
+        print("ignore file exist error")
     return 0
 
 
 def _copy_files(sources, output):
+    copy_set = set()
     for source_file in sources:
         source_file = source_file.strip()
-        if os.path.isfile(source_file):
-            file_util.copy_file(source_file, output)
+        if os.path.isfile(source_file) and os.path.exists(source_file):
+            # if same file name exist, add dir path
+            if os.path.basename(source_file) in copy_set:
+                new_output = os.path.join(output, os.path.dirname(source_file).
+                                          split(os.sep)[-1])
+                if not os.path.exists(new_output):
+                    os.makedirs(new_output)
+                file_util.copy_file(source_file, new_output)
+            else:
+                file_util.copy_file(source_file, output)
+            copy_set.add(os.path.basename(source_file))
+
+
 
 
 def _copy_dir(sources, output):
@@ -166,7 +195,7 @@ def get_subsystem_name(path):
     return subsystem_name
 
 
-def get_modulename_by_buildtaregt(module_list_file, build_target):
+def get_modulename_by_buildtarget(module_list_file, build_target):
     if not os.path.exists(module_list_file):
         return ""
     module_info_data = {}
@@ -198,9 +227,9 @@ def filter_by_subsystem(testsuites, product_json):
                 product_info = json.load(product_info)
         except ValueError:
             print("NO json object could be decoded.")
-        subsystem_info = product_info.get("subsystem")
+        subsystem_info = product_info.get("subsystems")
         for subsystem in subsystem_info:
-            subsystem_names.add(subsystem.get("name"))
+            subsystem_names.add(subsystem.get("subsystem"))
 
     feature_list = testsuites.split(",")
     for feature in feature_list:
@@ -264,9 +293,10 @@ def record_test_component_info(out_dir, version):
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
     test_component_file = os.path.join(out_dir, 'test_component.json')
-    test_component_data = {'version': version,}
+    test_component_data = {'version': version}
     with open(test_component_file, 'w') as out_file:
         json.dump(test_component_data, out_file)
+
 
 def get_target_modules(all_features):
     feature_list = []
@@ -277,5 +307,47 @@ def get_target_modules(all_features):
                 print(feature)
     return feature_list
 
+
+def cmd_popen(cmd):
+    proc = subprocess.Popen(cmd)
+    proc.wait()
+    ret_code = proc.returncode
+    if ret_code != 0:
+        raise Exception("{} failed, return code is {}".format(cmd, ret_code))
+
+
+def build_js_hap(project_path, out_put_dir, hap_name):
+    if not check_env():
+        return
+    gradle_dir = os.path.join(project_path, "gradle")
+    os.chdir(gradle_dir)
+    build_clean = ["gradle", "clean"]
+    cmd_popen(build_clean)
+    build_cmd = ["gradle", "entry:packageDebugHap"]
+    cmd_popen(build_cmd)
+    gralde_output_dir = os.path.join(gradle_dir, "entry", "build", "outputs")
+    if os.path.exists(gralde_output_dir):
+        for root, _, files in os.walk(gralde_output_dir):
+            for file in files:
+                if file.endswith(".hap"):
+                    file_util.copy_file(os.path.join(root, file),
+                                        os.path.join(out_put_dir.rstrip(','),
+                                                     hap_name))
+                    return
+
+
+
+def check_env():
+    """
+    check all the env for js hap build
+    return: return true if all env ready, otherwise return false
+    """
+    env_list = ['OHOS_SDK_HOME', 'NODE_HOME', 'GRADLE_HOME']
+    for env in env_list:
+        if not os.environ.get(env):
+            print("the env {} not set, skip build!".format(env))
+            return False
+    else:
+        return True
 if __name__ == '__main__':
     sys.exit(main())

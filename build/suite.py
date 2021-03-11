@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2020 Huawei Device Co., Ltd.
+Copyright (c) 2021 Huawei Device Co., Ltd.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -57,19 +57,18 @@ class SuiteModuleBuilder:
 
         parser = argparse.ArgumentParser()
         parser.add_argument('--build_target_name', help='', required=False)
-        parser.add_argument('--target_file', help='', required=True)
-        parser.add_argument('--javalib_file', help='', required=False)
+        parser.add_argument('--target_file', help='', required=False)
+        parser.add_argument('--hap_name', help='', required=False)
         parser.add_argument('--project_path', help='', required=True)
         parser.add_argument('--test_xml', help='', required=False)
         parser.add_argument('--project_type', help='', required=True)
         parser.add_argument('--suite_out_paths', help='', required=True)
         parser.add_argument('--suite_filename', help='', required=True)
         parser.add_argument('--subsystem_name', help='', required=False)
-
+        parser.add_argument('--build_root_path', help='', required=False)
+        parser.add_argument('--hap_sign', help='', required=False)
         self.args = parser.parse_args(self.arguments)
 
-        for one_file in self.args.target_file.rstrip(",").split(","):
-            self._check_file_exist(one_file)
 
         for _suite_out_file in self.args.suite_out_paths.split(","):
             if not _suite_out_file:
@@ -87,19 +86,19 @@ class SuiteModuleBuilder:
                 utils.copy_file(output=_out_file,
                                 sources=self.args.target_file,
                                 to_dir=True)
+            elif self.args.project_type == "hjsunit":
+                utils.build_js_hap(self.args.project_path, self.args.
+                                   suite_out_paths, self.args.hap_name)
             elif self.args.project_type != "hctest":
                 utils.copy_file(output=_out_file,
                                 sources=self.args.target_file,
                                 to_dir=False)
-            if self.args.project_type == "apk":
-                return
+
             _testsuite_name = self.args.suite_filename
             _matcher = re.match(r"(lib|libmodule_)?(\S+)\.\S+",
                                 _testsuite_name)
             if _matcher:
                 _testsuite_name = _matcher.group(2)
-            _testcase_xml = os.path.join(_suite_out_file,
-                                       _testsuite_name + ".xml")
             if self.args.project_type != "open_source_test":
                 _config_file = os.path.join(_suite_out_file,
                                             _testsuite_name + ".json")
@@ -208,6 +207,9 @@ class XDeviceBuilder:
                                 to_dir=True)
                 utils.copy_file(os.path.join(root_dir, "resource"),
                                 source_dirs=res_dir)
+                if not os.path.exists(os.path.join(
+                        root_dir, "resource", "tools")):
+                    os.mkdir(os.path.join(root_dir, "resource", "tools"))
         return 0
 
 
