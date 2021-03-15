@@ -125,9 +125,8 @@ class SuiteModuleBuilder:
                 'build_target_name or subsystem_name of testmodule "%s" '
                 'is invalid!' % module_name)
             return
-        module_info_dir = os.path.dirname(suite_out_dir)
-        module_info_list_file = os.path.join(module_info_dir,
-                                             'module_info.json')
+        module_info_list_file = os.path.join(
+            suite_out_dir, '{}_module_info.json'.format(module_name))
         module_info_data = {}
         if os.path.exists(module_info_list_file):
             try:
