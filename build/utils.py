@@ -272,7 +272,9 @@ def record_testmodule_info(build_target_name, module_name,
             'build_target_name or subsystem_name of testmodule "%s" '
             'is invalid!' % module_name)
         return
-    module_info_list_file = os.path.join(suite_out_dir, 'module_info.json')
+    module_info_dir = os.path.dirname(suite_out_dir)
+    module_info_list_file = os.path.join(module_info_dir,
+                                         'module_info.json')
     module_info_data = {}
     if os.path.exists(module_info_list_file):
         try:
@@ -290,20 +292,8 @@ def record_testmodule_info(build_target_name, module_name,
 def record_test_component_info(out_dir, version):
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
-    all_module_file = os.path.join(out_dir, 'module_info.json')
-    all_module_data = {}
-    for root, dirs, files in os.walk(out_dir):
-        for file in files:
-            if file.endswith("module_info.json"):
-                with open(os.path.join(root, file), 'r') as json_data:
-                    module_data = json.load(json_data)
-                    all_module_data.update(module_data)
-                os.remove(os.path.join(root, file))
-    with open(all_module_file, 'w') as out_file:
-        json.dump(all_module_data, out_file)
-
     test_component_file = os.path.join(out_dir, 'test_component.json')
-    test_component_data = {'version': version, }
+    test_component_data = {'version': version}
     with open(test_component_file, 'w') as out_file:
         json.dump(test_component_data, out_file)
 
