@@ -166,7 +166,7 @@ build_wifiiot()
 	
     cp -rf ${DIST_DIR}/${current_xts} ${suite_root_dir}
     rm -f ${suite_out_dir}/.bin
-    cp -rf ${DIST_DIR}/json/module_info.json ${suite_out_dir}
+    cp -rf ${DIST_DIR}/module_info.json ${suite_out_dir}
     cd $suite_root_dir
     rm -f ${suite_out_zip}
     zip -rv ${suite_out_zip} ${current_xts}
