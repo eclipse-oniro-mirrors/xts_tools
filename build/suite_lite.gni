@@ -214,6 +214,18 @@ template("test_suite") {
   if (defined(invoker.prebuilts_files)) {
     _prebuilts_files = invoker.prebuilts_files
   }
+  if (defined(invoker.version)) {
+    _version = invoker.version
+    _out_dir = rebase_path("${_suite_path}/testcases")
+    _args1 = [
+      "--method_name",
+      "record_test_component_info",
+      "--arguments",
+      "out_dir=${_out_dir}#version=${_version}",
+    ]
+    exec_script(rebase_path("$BUILD_DIR_PREFIX/utils.py"), _args1)
+  }
+
   _gen_args = [
     "archive_suite",
     "--suite_path",
@@ -235,18 +247,6 @@ template("test_suite") {
     deps = _deps
     args = _gen_args
     outputs = [ _output ]
-  }
-
-  if (defined(invoker.version)) {
-    _version = invoker.version
-    _out_dir = rebase_path("${_suite_path}/testcases")
-    _args1 = [
-      "--method_name",
-      "record_test_component_info",
-      "--arguments",
-      "out_dir=${_out_dir}#version=${_version}",
-    ]
-    exec_script(rebase_path("$BUILD_DIR_PREFIX/utils.py"), _args1)
   }
 }
 
