@@ -214,7 +214,14 @@ template("test_suite") {
   if (defined(invoker.prebuilts_files)) {
     _prebuilts_files = invoker.prebuilts_files
   }
-  if (defined(invoker.version)) {
+
+  _deps = [ "//test/xdevice/lite:xdevice" ]
+  if (defined(invoker.deps)) {
+    _deps += invoker.deps
+  }
+
+   if (defined(invoker.version)) {
+    _origin_target_name = "${target_name}"   
     _version = invoker.version
     _out_dir = rebase_path("${_suite_path}/testcases")
     _args1 = [
@@ -223,9 +230,14 @@ template("test_suite") {
       "--arguments",
       "out_dir=${_out_dir}#version=${_version}",
     ]
-    exec_script(rebase_path("$BUILD_DIR_PREFIX/utils.py"), _args1)
+    action("${target_name}_generate_module_data") {
+      script = rebase_path("$BUILD_DIR_PREFIX/utils.py")
+      deps = _deps
+      args = _args1
+      outputs = [ "${SUITE_OUTPUT_PREFIX}/${_origin_target_name}/${SUITE_TESTCASES_NAME}/module_info.json" ]
+    }
   }
-
+  
   _gen_args = [
     "archive_suite",
     "--suite_path",
@@ -238,10 +250,10 @@ template("test_suite") {
     "true",
   ]
 
-  _deps = [ "//test/xdevice/lite:xdevice" ]
-  if (defined(invoker.deps)) {
-    _deps += invoker.deps
-  }
+   if (defined(invoker.version)) {
+   _deps += [ ":${target_name}_generate_module_data" ]
+   }   
+  
   action(target_name) {
     script = rebase_path("$BUILD_DIR_PREFIX/suite.py")
     deps = _deps
