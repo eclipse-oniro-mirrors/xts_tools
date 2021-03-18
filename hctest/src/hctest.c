@@ -14,7 +14,6 @@
  */
 
 #include "hctest.h"
-#include <los_base.h>
 #include <ohos_init.h>
 #include "parameter.h"
 #include "samgr_lite.h"
