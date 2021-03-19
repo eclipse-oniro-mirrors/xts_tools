@@ -118,7 +118,7 @@ template("deploy_suite") {
   _arguments = [
     "build_xdevice",
     "--project_dir",
-    rebase_path(".."),
+    rebase_path("//test/xdevice"),
     "--output_dirs",
     _outputs,
   ]
