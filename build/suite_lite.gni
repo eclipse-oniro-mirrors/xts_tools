@@ -211,17 +211,20 @@ template("test_suite") {
   _output = "${SUITE_OUTPUT_PREFIX}${target_name}.zip"
   _suite_path = rebase_path("${SUITE_OUTPUT_PREFIX}${target_name}")
   _prebuilts_files = ","
+  _origin_target_name = target_name
   if (defined(invoker.prebuilts_files)) {
     _prebuilts_files = invoker.prebuilts_files
   }
 
-  _deps = [ "//test/xdevice/lite:xdevice" ]
+  target("deploy_suite", "${target_name}_xdevice") {
+    suite_name = _origin_target_name
+  }
+  _deps = [ ":${target_name}_xdevice" ]
   if (defined(invoker.deps)) {
     _deps += invoker.deps
   }
 
-   if (defined(invoker.version)) {
-    _origin_target_name = "${target_name}"   
+  if (defined(invoker.version)) {
     _version = invoker.version
     _out_dir = rebase_path("${_suite_path}/testcases")
     _args1 = [
@@ -237,7 +240,7 @@ template("test_suite") {
       outputs = [ "${SUITE_OUTPUT_PREFIX}/${_origin_target_name}/${SUITE_TESTCASES_NAME}/module_info.json" ]
     }
   }
-  
+
   _gen_args = [
     "archive_suite",
     "--suite_path",
@@ -250,10 +253,7 @@ template("test_suite") {
     "true",
   ]
 
-   if (defined(invoker.version)) {
-   _deps += [ ":${target_name}_generate_module_data" ]
-   }   
-  
+  _deps += [ ":${target_name}_generate_module_data" ]
   action(target_name) {
     script = rebase_path("$BUILD_DIR_PREFIX/suite.py")
     deps = _deps
