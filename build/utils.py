@@ -198,7 +198,6 @@ def get_subsystem_name(path):
 def get_modulename_by_buildtarget(module_list_file, build_target):
     if not os.path.exists(module_list_file):
         return ""
-    module_info_data = {}
     with open(module_list_file, "r") as module_file:
         module_info_data = json.load(module_file)
     for module in module_info_data:
