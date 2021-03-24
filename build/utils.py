@@ -265,13 +265,18 @@ def get_python_cmd():
 
 
 def record_testmodule_info(build_target_name, module_name,
-                            subsystem_name, suite_out_dir):
+                           subsystem_name, suite_out_dir, same_file=False):
     if not build_target_name or not subsystem_name:
         print(
             'build_target_name or subsystem_name of testmodule "%s" '
             'is invalid!' % module_name)
         return
-    module_info_list_file = os.path.join(suite_out_dir, 'module_info.json')
+    if same_file:
+        module_info_list_file = os.path.join(suite_out_dir, 'module_info.json')
+    else:
+        module_info_list_file = os.path.join(suite_out_dir,
+                                             '{}_module_info.json'.format
+                                             (build_target_name))
     module_info_data = {}
     if os.path.exists(module_info_list_file):
         try:

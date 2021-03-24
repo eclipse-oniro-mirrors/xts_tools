@@ -156,7 +156,7 @@ build_wifiiot()
       suite_module_name=`python test/xts/tools/lite/build/utils.py --method_name get_modulename_by_buildtarget --arguments module_list_file=${module_list_file}#build_target=${suite_build_target}`
       subsystem_name=`python test/xts/tools/lite/build/utils.py --method_name get_subsystem_name --arguments path=${element}`
 	  
-      python test/xts/tools/lite/build/utils.py --method_name record_testmodule_info --arguments build_target_name=${suite_module_name}#module_name=${suite_module_name}#subsystem_name=${subsystem_name}#suite_out_dir=${DIST_DIR}/json
+      python test/xts/tools/lite/build/utils.py --method_name record_testmodule_info --arguments build_target_name=${suite_module_name}#module_name=${suite_module_name}#subsystem_name=${subsystem_name}#suite_out_dir=${DIST_DIR}/json#same_file=True
 
       mkdir -p ${suite_out_dir}/${subsystem_name}
       cp -f ${BASE_HOME}/out/hispark_pegasus/wifiiot_hispark_pegasus/${WIFIIOT_OUTFILE} ${suite_out_dir}/${subsystem_name}/${suite_module_name}.bin
