@@ -46,7 +46,13 @@ static void RunSingleTestSuite(CTestSuite* testSuite)
         CTestCase* cTestCase = (CTestCase *)(VECTOR_At(
             &(testSuite->test_cases), i));
         if (cTestCase != NULL) {
+            if (i == size - 1) {
+                cTestCase->lite_setup();
+            }
             RunSingleTestCase(cTestCase, cTestCase->case_name, cTestCase->flag);
+            if (i == 0) {
+                cTestCase->lite_teardown();
+            }
         }
     }
     UnityEnd();
@@ -124,9 +130,7 @@ static void RunSingleTestCase(CTestCase* cTestCase,
             g_isBreak = TRUE;
             return;
         }
-        cTestCase->lite_setup();
         UnityDefaultTestRun(cTestCase->execute_func, cTestCase->case_name, cTestCase->line_num);
-        cTestCase->lite_teardown();
     }
 }
 
