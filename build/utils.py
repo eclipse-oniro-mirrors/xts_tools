@@ -40,6 +40,7 @@ _SUB_SYSTEM_LIST = [
     "uikit",
     "multimedia",
     "hdf",
+    "aafwk",
     "appexecfwk",
     "distributed_schedule",
     "startup",
