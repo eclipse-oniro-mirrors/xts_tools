@@ -221,8 +221,6 @@ class SuiteArchiveBuilder:
     def archive_suite(self):
         parser = argparse.ArgumentParser()
         parser.add_argument('--suite_path', help='', required=True)
-        parser.add_argument('--testcases_name', help='', required=True)
-        parser.add_argument('--prebuilts_resource', help='', required=True)
         parser.add_argument('--build_enabled', help='', required=True)
         args = parser.parse_args(self.arguments)
         if not args.build_enabled.lower() == 'true':
@@ -233,19 +231,8 @@ class SuiteArchiveBuilder:
         if not os.path.isdir(suite_path):
             raise Exception("[%s] does not exist" % suite_path)
 
-        # generate module_info.json
-        copyfiles = args.prebuilts_resource.split(",")
-        for file in copyfiles:
-            if os.path.exists(file):
-                subprocess.call(["/bin/cp", "-rf", file, suite_path])
-
         archive_name = os.path.basename(suite_path)
         suite_root_path = os.path.dirname(suite_path)
-        # remove the extra output of target "java_prebuilt"
-        # such as ztest-tradefed-common.interface.jar
-        subprocess.call(
-            ["/usr/bin/find", suite_path, "-name", "*.interface.jar",
-             "-exec", "rm", "{}", "+"])
         shutil.make_archive(suite_path, "zip", suite_root_path, archive_name)
         return 0
 

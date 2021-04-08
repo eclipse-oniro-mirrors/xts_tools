@@ -210,11 +210,7 @@ template("test_suite") {
   assert(defined(invoker.deps), "deps is required in target ${target_name}")
   _output = "${SUITE_OUTPUT_PREFIX}${target_name}.zip"
   _suite_path = rebase_path("${SUITE_OUTPUT_PREFIX}${target_name}")
-  _prebuilts_files = ","
   _origin_target_name = target_name
-  if (defined(invoker.prebuilts_files)) {
-    _prebuilts_files = invoker.prebuilts_files
-  }
 
   target("deploy_suite", "${target_name}_xdevice") {
     suite_name = _origin_target_name
@@ -245,10 +241,6 @@ template("test_suite") {
     "archive_suite",
     "--suite_path",
     _suite_path,
-    "--testcases_name",
-    SUITE_TESTCASES_NAME,
-    "--prebuilts_resource",
-    _prebuilts_files,
     "--build_enabled",
     "true",
   ]
