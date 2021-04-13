@@ -232,7 +232,7 @@ def glob(path, filename_pattern):
 def filter_by_subsystem(testsuites, product_json):
     product_info = {}
     filtered_features = []
-    subsystem_names = set()
+    subs_comps = {}
     # parses product json to obtain all the subsystem name
     if os.path.exists(product_json):
         try:
