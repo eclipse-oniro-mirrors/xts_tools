@@ -249,8 +249,7 @@ def filter_by_subsystem(testsuites, product_json):
     for feature in feature_list:
         # if subsytem name match
         subsystem = get_subsystem_name_no_output(feature)
-        if subsystem in _NO_FILTE_SUB_SYSTEM_LIST or \
-                subsystem in subsystem_names:
+        if subsystem in _NO_FILTE_SUB_SYSTEM_LIST:
             filtered_features.append(feature)
             print(feature)
         elif subsystem in subs_comps:
@@ -280,7 +279,7 @@ def check_component(path, components):
     for component in components:
         component_name = component.get("component", "")
         if component_name in path or "{}_hal".format(component_name) in path \
-                or "{}_posix".format(component_name) in path:
+                 or "{}_posix".format(component_name) in path:
             return True
     return False
 
