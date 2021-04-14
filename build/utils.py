@@ -62,7 +62,23 @@ _NO_FILTE_SUB_SYSTEM_LIST = [
     "open_posix_testsuite",
     "sample",
     "telephony",
-    "dcts"
+    "dcts",
+    "hiviewdfx",
+    "communication",
+    "security",
+    "update",
+    "sstsutils",
+    "uikit",
+    "multimedia",
+    "hdf",
+    "distributed_schedule",
+    "sensors",
+    "iot_hardware",
+    "graphic",
+    "ace",
+    "applications",
+    "ai",
+    "global"
 ]
 
 
@@ -159,8 +175,6 @@ def _copy_files(sources, output):
             copy_set.add(os.path.basename(source_file))
 
 
-
-
 def _copy_dir(sources, output):
     for source_file in sources:
         source_file = source_file.strip()
@@ -219,7 +233,7 @@ def glob(path, filename_pattern):
 def filter_by_subsystem(testsuites, product_json):
     product_info = {}
     filtered_features = []
-    subsystem_names = set()
+    subs_comps = {}
     # parses product json to obtain all the subsystem name
     if os.path.exists(product_json):
         try:
@@ -229,16 +243,21 @@ def filter_by_subsystem(testsuites, product_json):
             print("NO json object could be decoded.")
         subsystem_info = product_info.get("subsystems")
         for subsystem in subsystem_info:
-            subsystem_names.add(subsystem.get("subsystem"))
+            subs_comps[subsystem.get("subsystem")] = \
+                subsystem.get("components", [])
 
     feature_list = testsuites.split(",")
     for feature in feature_list:
         # if subsytem name match
         subsystem = get_subsystem_name_no_output(feature)
-        if subsystem in _NO_FILTE_SUB_SYSTEM_LIST or \
-                subsystem in subsystem_names:
+        if subsystem in _NO_FILTE_SUB_SYSTEM_LIST:
             filtered_features.append(feature)
             print(feature)
+        elif subsystem in subs_comps:
+            components = subs_comps.get(subsystem, [])
+            if check_component(feature, components):
+                filtered_features.append(feature)
+                print(feature)
     return filtered_features
 
 
@@ -255,6 +274,16 @@ def get_subsystem_name_no_output(path):
             subsystem_name = subsystem
             break
     return subsystem_name
+
+
+def check_component(path, components):
+    for component in components:
+        component_name = component.get("component", "")
+        component_name = component_name.replace("_lite", "")
+        if component_name in path or "{}_hal".format(component_name) in path \
+                 or "{}_posix".format(component_name) in path:
+            return True
+    return False
 
 
 def get_python_cmd():
