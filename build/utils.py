@@ -68,9 +68,7 @@ _NO_FILTE_SUB_SYSTEM_LIST = [
     "update",
     "sstsutils",
     "hdf",
-    "distributed_schedule",
-    "ace",
-    "global"
+    "distributed_schedule"
 ]
 
 
