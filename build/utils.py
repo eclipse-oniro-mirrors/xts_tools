@@ -37,7 +37,6 @@ _SUB_SYSTEM_LIST = [
     "update",
     "sstsutils",
     "utils",
-    "uikit",
     "multimedia",
     "hdf",
     "aafwk",
@@ -68,16 +67,9 @@ _NO_FILTE_SUB_SYSTEM_LIST = [
     "security",
     "update",
     "sstsutils",
-    "uikit",
-    "multimedia",
     "hdf",
     "distributed_schedule",
-    "sensors",
-    "iot_hardware",
-    "graphic",
     "ace",
-    "applications",
-    "ai",
     "global"
 ]
 
