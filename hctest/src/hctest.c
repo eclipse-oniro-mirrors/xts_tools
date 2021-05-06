@@ -194,76 +194,64 @@ void LiteTestPrint(const char *fmt, ...)
 
 void ObtainProductParams(void)
 {
-    char* bootloaderVersion = GetBootloaderVersion();
+    const char* bootloaderVersion = GetBootloaderVersion();
     if (bootloaderVersion != NULL) {
         printf("The bootloaderVersion is [%s]\n", bootloaderVersion);
-        free(bootloaderVersion);
     }
 	
-    char* securityPatchTag = GetSecurityPatchTag();
+    const char* securityPatchTag = GetSecurityPatchTag();
     if (securityPatchTag != NULL) {
         printf("The Security Patch is [%s]\n", securityPatchTag);
-        free(securityPatchTag);
     }
 	
-    char* abiList = GetAbiList();
+    const char* abiList = GetAbiList();
     if (abiList != NULL) {
         printf("The AbiList is [%s]\n", abiList);
-        free(abiList);
     }
 	
-    char* sdkApiLevel = GetSdkApiLevel();
+    int sdkApiLevel = GetSdkApiVersion();
     if (sdkApiLevel != NULL) {
-        printf("The sdkApiLevel is [%s]\n", sdkApiLevel);
-        free(sdkApiLevel);
+        printf("The sdkApiLevel is [%d]\n", sdkApiLevel);
     }
 	
-    char* firstApiLevel = GetFirstApiLevel();
+    int firstApiLevel = GetFirstApiVersion();
     if (firstApiLevel != NULL) {
-        printf("The firstApiLevel is [%s]\n", firstApiLevel);
-        free(firstApiLevel);
+        printf("The firstApiLevel is [%d]\n", firstApiLevel);
     }
 
-    char* incrementalVersion = GetIncrementalVersion();
+    const char* incrementalVersion = GetIncrementalVersion();
     if (incrementalVersion != NULL) {
         printf("The productSeries is [%s]\n", incrementalVersion);
-        free(incrementalVersion);
     }
 	
-    char* versionId = GetVersionId();
+    const char* versionId = GetVersionId();
     if (versionId != NULL) {
         printf("The VersionID is [%s]\n", versionId);
-        free(versionId);
     }
 
-    char* buildType = GetBuildType();
+    const char* buildType = GetBuildType();
     if (buildType != NULL) {
         printf("The buildType is [%s]\n", buildType);
-        free(buildType);
     }
 
-    char* buildUser = GetBuildUser();
+    const char* buildUser = GetBuildUser();
     if (buildUser != NULL) {
         printf("The buildUser is [%s]\n", buildUser);
-        free(buildUser);
     }
 
-    char* buildHost = GetBuildHost();
+    const char* buildHost = GetBuildHost();
     if (buildHost != NULL) {
         printf("The buildHost is [%s]\n", buildHost);
-        free(buildHost);
     }
 	
-    char* buildTime = GetBuildTime();
+    const char* buildTime = GetBuildTime();
     if (buildTime != NULL) {
         printf("The buildTime is [%s]\n", buildTime);
-        free(buildTime);
     }	
 
-    char* buildRootHash = GetBuildRootHash();
+    const char* buildRootHash = GetBuildRootHash();
     if (buildRootHash != NULL) {
         printf("The BuildRootHash is [%s]\n", buildRootHash);
-        free(buildRootHash);
     }
 }
 
@@ -271,70 +259,59 @@ void ObtainProductParams(void)
 void ObtainSystemParams(void)
 {
     printf("******To Obtain Product Params Start******\n");
-    char* productType = GetProductType();
+    const char* productType = GetDeviceType();
     if (productType != NULL) {
         printf("The Product Type is [%s]\n", productType);
-        free(productType);
     }
 
-    char* manuFacture = GetManufacture();
+    const char* manuFacture = GetManufacture();
     if (manuFacture != NULL) {
         printf("The manuFacture is [%s]\n", manuFacture);
-        free(manuFacture);
     }
 
-    char* brand = GetBrand();
+    const char* brand = GetBrand();
     if (brand != NULL) {
         printf("The brand is [%s]\n", brand);
-        free(brand);
     }
 
-    char* marketName = GetMarketName();
+    const char* marketName = GetMarketName();
     if (marketName != NULL) {
         printf("The marketName is [%s]\n", marketName);
-        free(marketName);
     }
 
-    char* productSeries = GetProductSeries();
+    const char* productSeries = GetProductSeries();
     if (productSeries != NULL) {
         printf("The productSeries is [%s]\n", productSeries);
-        free(productSeries);
     }
 	
-    char* softwareModel = GetSoftwareModel();
+    const char* softwareModel = GetSoftwareModel();
     if (softwareModel != NULL) {
         printf("The softwareModel is [%s]\n", softwareModel);
-        free(softwareModel);
     }
 	
-    char* hardWareModel = GetHardwareModel();
+    const char* hardWareModel = GetHardwareModel();
     if (hardWareModel != NULL) {
         printf("The HardwareModel is [%s]\n", hardWareModel);
-        free(hardWareModel);
     }
 
-    char* hardWareProfile = GetHardwareProfile();
+    const char* hardWareProfile = GetHardwareProfile();
     if (hardWareProfile != NULL) {
         printf("The HardwareProfile is [%s]\n", hardWareProfile);
-        free(hardWareProfile);
     }	
 	
-    char* serial = GetSerial();
+    const char* serial = GetSerial();
     if (serial != NULL) {
         printf("The serial is [%s]\n", serial);
-        free(serial);
     }
 
-    char* osName = GetOsName();
+    const char* osName = GetOSFullName();
     if (osName != NULL) {
         printf("The osName is [%s]\n", osName);
-        free(osName);
     }
 	
-    char* displayVersion = GetDisplayVersion();
+    const char* displayVersion = GetDisplayVersion();
     if (displayVersion != NULL) {
         printf("The OS Version is [%s]\n", displayVersion);
-        free(displayVersion);
     }
     ObtainProductParams();
 
