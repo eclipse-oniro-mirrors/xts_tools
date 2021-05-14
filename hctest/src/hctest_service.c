@@ -17,7 +17,6 @@
 #include "samgr_lite.h"
 #include <ohos_init.h>
 #include <securec.h>
-#include <los_base.h>
 #include "service.h"
 #include "common.h"
 #include "hctest_internal.h"
