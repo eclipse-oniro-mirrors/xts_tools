@@ -41,6 +41,7 @@ _SUB_SYSTEM_LIST = [
     "hdf",
     "aafwk",
     "appexecfwk",
+    "distributeddatamgr",
     "distributed_schedule",
     "startup",
     "sensors",
