@@ -357,7 +357,7 @@ The HCTest framework is used to support test cases developed with the C language
 
     Test suites are compiled along with version compilation. The ACTS is compiled together with the debug version.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >![](figures/icon-note.gif) **NOTE:** 
     >The ACTS compiles middleware as a static library, which will be linked to the image.
 
 
@@ -490,7 +490,7 @@ The HCPPTest framework is enhanced and adapted based on the open-source framewor
 
     Test suites are compiled along with the version compilation. The ACTS is compiled together with the debug version.
 
-    >![](public_sys-resources/icon-note.gif) **NOTE:** 
+    >![](figures/icon-note.gif) **NOTE:** 
     >The ACTS for a small system device is independently compiled to an executable file \(.bin\) and archived in the  **suites\\acts**  directory of the compilation result.
 
 
