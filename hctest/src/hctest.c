@@ -221,9 +221,14 @@ void ObtainProductParams(void)
 
     const char* incrementalVersion = GetIncrementalVersion();
     if (incrementalVersion != NULL) {
-        printf("The productSeries is [%s]\n", incrementalVersion);
+        printf("The incrementalVersion is [%s]\n", incrementalVersion);
     }
-	
+
+    const char* productModel = GetProductModel();
+    if (productModel != NULL) {
+      printf("The productModel is [%s]\n", productModel);
+    }
+
     const char* versionId = GetVersionId();
     if (versionId != NULL) {
         printf("The VersionID is [%s]\n", versionId);
