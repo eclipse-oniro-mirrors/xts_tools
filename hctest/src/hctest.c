@@ -227,7 +227,6 @@ void ObtainProductParams(void)
     const char* productModel = GetProductModel();
     if (productModel != NULL) {
       printf("The productModel is [%s]\n", productModel);
-      free(productModel);
     }
 
     const char* versionId = GetVersionId();
