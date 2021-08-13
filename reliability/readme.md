@@ -71,7 +71,7 @@ xts_tools/reliability
     testFilePath = "d:\\test\\"             #测试用例存放路径
     testFile = "hilogtest"                  #测试用例文件名
     testTime = 6 * 3600                     #测试时间长度，默认测试6小时
-    processNum = 2                          #测试线程数量，默认5个线程
+    processNum = 5                          #测试线程数量，默认5个线程
 ```
 2.  执行Native的测试用例进行反复压力测试
     执行python ReliabilitypressTest.py开始测试
