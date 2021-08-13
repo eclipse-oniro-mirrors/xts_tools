@@ -25,7 +25,7 @@ testFile = "hilogtest"
 testPID = []
 filenames = []
 testTime = 0.1 * 360
-processNum = 2
+processNum = 5
 
 
 def EnvInit():
