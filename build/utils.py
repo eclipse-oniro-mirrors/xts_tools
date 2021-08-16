@@ -57,6 +57,7 @@ _SUB_SYSTEM_LIST = [
 ]
 
 _NO_FILTE_SUB_SYSTEM_LIST = [
+    "applications",
     "kernel",
     "open_posix_testsuite",
     "sample",
