@@ -20,8 +20,9 @@ from utils import *
 import logging
 
 hdcPath = "D:\\tools\\hdc\\hdc_std.exe"
-testFilePath = "d:\\test\\"
-testFile = "hilogtest"
+testFilePath = "D:\\test\\testcase\\"
+testFile = ["ActsMediaCppStandardTest", "faultloggertest", "hilogtest", "hipluginmoduleapitest", "HiSysEventCPPTest",
+            "LibhilogCPPtest", "libhilogCtest", "ZoneUtiltest"]
 testPID = []
 filenames = []
 testTime = 0.1 * 360
@@ -29,17 +30,19 @@ processNum = 5
 
 
 def EnvInit():
-    exec_cmd(hdcPath + " file send " + testFilePath + testFile + " /data/local/tmp/" + testFile)
-    time.sleep(3)
-    exec_cmd(hdcPath + " shell chmod +x /data/local/tmp/" + testFile)
+    test_fileset = ""
+    for test_fileset in testFile:
+        exec_cmd(hdcPath + " file send " + testFilePath + test_fileset + " /data/local/tmp/" + test_fileset)
+        time.sleep(3)
+    exec_cmd(hdcPath + " shell chmod +x /data/local/tmp/" + test_fileset)
 
 
-def PressTestProcess(testCmd=""):
+def PressTestProcess(testCmd="", testFilename=""):
     print("Start to PressTest Process with cmd " + testCmd)
     for i in range(processNum):
         exec_cmd(testCmd)
     time.sleep(3)
-    GetPidOfProcess(testFile)
+    GetPidOfProcess(testFilename)
 
 
 def GetPidOfProcess(processName=""):
@@ -97,6 +100,7 @@ def ProcessTestResultCheck(testScriptPath):
         return False
     return True
 
+
 #######################################################
 
 
@@ -104,22 +108,21 @@ if __name__ == "__main__":
     logging.info("------------------------NEW TEST---------------------------")
     print("abs path is %s" % (os.path.split(os.path.realpath(__file__))[0]))
     testScriptPath = os.path.split(os.path.realpath(__file__))[0]
+    testFileset = ""
     EnvInit()
     start = datetime.datetime.now()
     now = datetime.datetime.now()
-    startTestCmd = "\"cd /data/local/tmp/;/data/local/tmp/" + \
-                   testFile + " --gtest_repeat=-1 > /dev/null \""
-    PressTestProcess("start " + hdcPath + " shell " + startTestCmd)
     while (now - start).seconds < int(testTime):
         print("Now is " + str((now - start).seconds))
         now = datetime.datetime.now()
-        time.sleep(30)
-        PressTestCheck()
-        if len(testPID) < processNum:
-            ProcessTestResultCheck(testScriptPath)
-            ProcessTestEnd()
-            print("Exception found while Testing,please check faultlog path")
-            raise Exception("Exception found after Test,please check faultlog path")
+        for testFileset in testFile:
+            startTestCmd = "\"cd /data/local/tmp/;/data/local/tmp/" + \
+                           testFileset + " > /dev/null \""
+            PressTestProcess("start " + hdcPath + " shell " + startTestCmd, testFileset)
+            PressTestCheck()
+            while len(testPID) > 0:
+                time.sleep(1)
+                PressTestCheck()
     ProcessTestEnd()
     if not ProcessTestResultCheck(testScriptPath):
         print("Exception found after Test,please check faultlog path")
