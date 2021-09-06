@@ -40,21 +40,25 @@ static void RunSingleTestSuite(CTestSuite* testSuite)
         return;
     }
     int16 size = VECTOR_Size(&(testSuite->test_cases));
+    if (size < 0) {
+        return;
+    }
     UnityBegin(testSuite->file);
     int16 i;
+    CTestCase *testCase = (CTestCase *)(VECTOR_At(&(testSuite->test_cases), 0));
+    // when setup failed， skip test suites
+    if (testCase == NULL || !testCase->lite_setup()) {
+        printf("Setup failed, skip this test suite!\n");
+        UnityEnd();
+        return;
+    }
     for (i = size - 1; i >= 0; i--) {
-        CTestCase* cTestCase = (CTestCase *)(VECTOR_At(
-            &(testSuite->test_cases), i));
-        if (cTestCase != NULL) {
-            if (i == size - 1) {
-                cTestCase->lite_setup();
-            }
-            RunSingleTestCase(cTestCase, cTestCase->case_name, cTestCase->flag);
-            if (i == 0) {
-                cTestCase->lite_teardown();
-            }
+        CTestCase *hcCase = (CTestCase *)(VECTOR_At(&(testSuite->test_cases), i));
+        if (hcCase != NULL) {
+            RunSingleTestCase(hcCase, hcCase->case_name, hcCase->flag);
         }
     }
+    testCase->lite_teardown();
     UnityEnd();
 }
 
