@@ -21,7 +21,6 @@ XTS=
 WIFIIOT_OUTFILE=Hi3861_wifiiot_app_allinone.bin
 DIST_DIR=$BASE_HOME/dist
 WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/communication_lite/lwip_hal:ActsLwipTest"
-WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/communication_lite/softbus_hal:ActsSoftBusTest"
 WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/communication_lite/wifiservice_hal:ActsWifiServiceTest"
 WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/startup_lite/syspara_hal:ActsParameterTest"
 WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/startup_lite/bootstrap_hal:ActsBootstrapTest"
