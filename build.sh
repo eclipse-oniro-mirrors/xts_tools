@@ -22,15 +22,16 @@ WIFIIOT_OUTFILE=Hi3861_wifiiot_app_allinone.bin
 DIST_DIR=$BASE_HOME/dist
 WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/communication_lite/lwip_hal:ActsLwipTest"
 WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/communication_lite/wifiservice_hal:ActsWifiServiceTest"
-WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/startup_lite/syspara_hal:ActsParameterTest"
-WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/startup_lite/bootstrap_hal:ActsBootstrapTest"
 WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/utils_lite/file_hal:ActsUtilsFileTest"
+WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/startup_lite/syspara_hal:ActsParameterTest"
 WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/iot_hardware_lite/iot_controller_hal:ActsWifiIotTest"
-WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/kernel_lite/kernelcmsis_hal:ActsCMSISTest"
 WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/utils_lite/kv_store_hal:ActsKvStoreTest"
 WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/security_lite/huks/liteos_m_adapter:ActsHuksHalFunctionTest"
+WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/hiviewdfx_lite/hilog_hal:ActsDfxFuncTest"
+WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/hiviewdfx_lite/hievent_hal:ActsHieventLiteTest"
 WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/distributed_schedule_lite/system_ability_manager_hal:ActsSamgrTest"
-#WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/update_lite/dupdate_hal:ActsUpdaterFuncTest"
+WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/update_lite/dupdate_hal:ActsUpdaterFuncTest"
+WIFIIOT_ACTS_MODULES="${WIFIIOT_ACTS_MODULES},//test/xts/acts/startup_lite/bootstrap_hal:ActsBootstrapTest"
 
 error_report() {
     echo "Error on line $1"
