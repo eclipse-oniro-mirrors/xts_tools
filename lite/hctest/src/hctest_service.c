@@ -87,7 +87,7 @@ static BOOL MessageHandle(Service *service, Request *request)
 
 static TaskConfig GetTaskConfig(Service *service)
 {
-    TaskConfig config = {LEVEL_MIDDLE, PRI_NORMAL, 0x1000, TASK_QUEUE_SIZE, SINGLE_TASK};
+    TaskConfig config = {LEVEL_MIDDLE, PRI_NORMAL, 0x1800, TASK_QUEUE_SIZE, SINGLE_TASK};
     (void)service;
     return config;
 };
