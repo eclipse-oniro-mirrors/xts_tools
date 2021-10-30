@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2021 Huawei Device Co., Ltd.
+Copyright (c) 2020-2021 Huawei Device Co., Ltd.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -27,150 +27,48 @@ from string import Template
 import utils
 import json
 import shutil
-import platform
+import glob
+import stat
 
 
-class SuiteModuleBuilder:
-    """
-    To Build Suite Module
-    @arguments(build_target_name, target_file...)
-    """
-
-    def __init__(self, arguments):
-        self.arguments = arguments
-        self.args = None
-
-    def build_module(self):
-        """
-        build_target_name='wifiaware_test',
-        javalib_file=None,
-        project_path='xxx/communication_lite/wifiaware',
-        project_type='hctest',
-        source_path='xxx/x.c,xxx/x.c
-        subsystem_name='communication',
-        suite_filename='libwifiaware_test.a',
-        suite_out_paths='out/x/suites/acts/testcases/communication,'
-        target_file='xxxx/libs/libmodule_wifiaware_test.a',
-        test_xml='xxx/Test.json'
-        :return:
-        """
-
-        parser = argparse.ArgumentParser()
-        parser.add_argument('--build_target_name', help='', required=False)
-        parser.add_argument('--target_file', help='', required=False)
-        parser.add_argument('--hap_name', help='', required=False)
-        parser.add_argument('--project_path', help='', required=True)
-        parser.add_argument('--test_xml', help='', required=False)
-        parser.add_argument('--project_type', help='', required=True)
-        parser.add_argument('--suite_out_paths', help='', required=True)
-        parser.add_argument('--suite_filename', help='', required=True)
-        parser.add_argument('--subsystem_name', help='', required=False)
-        parser.add_argument('--build_root_path', help='', required=False)
-        parser.add_argument('--hap_sign', help='', required=False)
-        self.args = parser.parse_args(self.arguments)
+XTS_RESOURCE_ROOT = 'ivbxfj`qspqsjfubsz0sftpvsdf'
 
 
-        for _suite_out_file in self.args.suite_out_paths.split(","):
-            if not _suite_out_file:
-                continue
-            if self.args.project_type == "pythontest":
-                _out_file = _suite_out_file
-            else:
-                _out_file = os.path.join(_suite_out_file,
-                                         self.args.suite_filename)
-            if self.args.project_type == "pythontest":
-                utils.copy_file(output=_out_file,
-                                source_dirs=self.args.target_file,
-                                to_dir=True)
-            elif self.args.project_type == "open_source_test":
-                utils.copy_file(output=_out_file,
-                                sources=self.args.target_file,
-                                to_dir=True)
-            elif self.args.project_type == "hjsunit":
-                utils.build_js_hap(self.args.project_path, self.args.
-                                   suite_out_paths, self.args.hap_name)
-            elif self.args.project_type != "hctest":
-                utils.copy_file(output=_out_file,
-                                sources=self.args.target_file,
-                                to_dir=False)
+def _get_xts_rootpath(project_path):
+    if project_path is not None:
+        return project_path[0:project_path.find('/xts/') + len('/xts/')]
+    raise ValueError('Illegal xts project path ' + project_path)
 
-            _testsuite_name = self.args.suite_filename
-            _matcher = re.match(r"(lib|libmodule_)?(\S+)\.\S+",
-                                _testsuite_name)
-            if _matcher:
-                _testsuite_name = _matcher.group(2)
-            if self.args.project_type != "open_source_test":
-                _config_file = os.path.join(_suite_out_file,
-                                            _testsuite_name + ".json")
-            else:
-                _config_file = os.path.join(_out_file,
-                                            _testsuite_name + ".json")
-            utils.record_testmodule_info(self.args.build_target_name,
-                                         _testsuite_name,
-                                         self.args.subsystem_name,
-                                         _suite_out_file)
-            _test_xml = self.args.test_xml
-            if _test_xml and os.path.exists(_test_xml):
-                utils.copy_file(output=_config_file, sources=_test_xml,
-                                to_dir=False)
-            else:
-                self._generate_xml_by_template(_test_xml, _testsuite_name,
-                                               _config_file)
 
-    @staticmethod
-    def _record_testmodule_info(build_target_name, module_name,
-                                subsystem_name, suite_out_dir):
-        if not build_target_name or not subsystem_name:
-            print(
-                'build_target_name or subsystem_name of testmodule "%s" '
-                'is invalid!' % module_name)
-            return
-        module_info_dir = os.path.dirname(suite_out_dir)
-        module_info_list_file = os.path.join(module_info_dir,
-                                             'module_info.json')
-        module_info_data = {}
-        if os.path.exists(module_info_list_file):
-            try:
-                with open(module_info_list_file, 'r') as module_file:
-                    module_info_data = json.load(module_file)
-            except ValueError:
-                print("NO json object could be decoded but continue")
-        module_info = {'subsystem': subsystem_name,
-                       'build_target_name': build_target_name}
-        module_info_data[module_name] = module_info
-        with open(module_info_list_file, 'w') as out_file:
-            json.dump(module_info_data, out_file)
+def _get_subsystem_name(project_path):
+    if '/hits/' in  project_path:
+        index0 = project_path.find('/hits/') + len('/hits/')
+    elif '/acts/' in  project_path:
+        index0 = project_path.find('/acts/') + len('/acts/')
+    else:
+        raise ValueError('Illegal xts project path ' + project_path)
+    index1 = project_path.find('/', index0)
+    return project_path[index0:index1]
 
-    def _generate_xml_by_template(self, test_xml, module_name,
-                                  config_file):
-        index = test_xml.rfind(".json")
-        tmpl_file = test_xml[:index] + ".tmpl"
-        if not os.path.exists(tmpl_file):
-            raise Exception(
-                "Can't find the Test.json or Test.tmpl in the "
-                "path %s " % os.path.dirname(
-                    test_xml))
-        tmpl_content = utils.read_file(tmpl_file)
-        values = {"module": module_name, "subsystem": self.args.subsystem_name}
-        xml_content = Template(tmpl_content).substitute(values)
-        utils.write_file(config_file, xml_content, False)
 
-    @staticmethod
-    def _check_file_exist(file_path):
-        if not os.path.exists(file_path):
-            raise Exception("File [%s] does not exist!" % file_path)
+def _get_resource_rootpath(project_path):
+    xts_root = _get_xts_rootpath(project_path)
+    resource_reldir = ''.join(chr(ord(ch) - 1) for ch in XTS_RESOURCE_ROOT)
+    return os.path.join(xts_root, resource_reldir)
 
 
 class XDeviceBuilder:
     """
-    To build XTS as a egg package
+    To build XTS as an egg package
     @arguments(project_dir, output_dirs)
     """
 
     def __init__(self, arguments):
         parser = argparse.ArgumentParser()
-        parser.add_argument('--project_dir', help='', required=True)
-        parser.add_argument('--output_dirs', help='', required=True)
+        parser.add_argument('--source_dir', help='', required=True)
+        parser.add_argument('--configs_dir', help='', required=False)
+        parser.add_argument('--resources_dir', help='', required=False)
+        parser.add_argument('--suite_out_dir', help='', required=True)
         self.args = parser.parse_args(arguments)
 
     def build_xdevice(self):
@@ -178,39 +76,41 @@ class XDeviceBuilder:
         build xdevice package
         :return:
         """
-        command = [utils.get_python_cmd(), "setup.py", "install", "--user"]
-        factory_script = os.path.join(self.args.project_dir, "factory.sh")
-        if os.path.exists(factory_script):
-            os.chmod(factory_script, 0o775)
-            command = factory_script
+        extension_dir = os.path.join(self.args.source_dir, 'extension')
+        gen_dir0 = os.path.join(self.args.source_dir, 'dist')
+        gen_dir1 = os.path.join(extension_dir, 'dist')
+        shutil.rmtree(gen_dir0, ignore_errors=True)
+        shutil.rmtree(gen_dir1, ignore_errors=True)
+        command0 = ["python", "setup.py", "sdist"]
+        command1 = ["python", "setup.py", "sdist"]
         try:
-            subprocess.check_call(command, cwd=self.args.project_dir)
+            subprocess.check_call(command0, cwd=self.args.source_dir)
+            subprocess.check_call(command1, cwd=extension_dir)
         except subprocess.CalledProcessError as exc:
             print('returncode: {} cmd: {} output: {}'.format(
-                exc.returncode, exc.cmd, exc.output))
+                  exc.returncode, exc.cmd, exc.output))
 
-        dist_dir = os.path.join(self.args.project_dir, 'dist')
         run_scripts = ",".join(
-            [os.path.join(self.args.project_dir, "run.bat"),
-             os.path.join(self.args.project_dir, "run.sh")])
-        config_dir = os.path.join(self.args.project_dir, "config")
-        res_dir = os.path.join(self.args.project_dir, "resource")
-        for tool_dir in self.args.output_dirs.split(","):
-            if tool_dir:
-                utils.copy_file(output=tool_dir, source_dirs=dist_dir,
-                                to_dir=True)
-                root_dir = os.path.dirname(tool_dir)
-                utils.copy_file(output=root_dir, sources=run_scripts,
-                                to_dir=True)
-                to_dir = os.path.join(root_dir, "config")
-                utils.copy_file(output=to_dir, source_dirs=config_dir,
-                                to_dir=True)
-                utils.copy_file(os.path.join(root_dir, "resource"),
-                                source_dirs=res_dir)
-                if not os.path.exists(os.path.join(
-                        root_dir, "resource", "tools")):
-                    os.mkdir(os.path.join(root_dir, "resource", "tools"))
-        return 0
+            [os.path.join(self.args.source_dir, "run.bat"),
+             os.path.join(self.args.source_dir, "run.sh")])
+
+        dist_tools_dir = os.path.join(self.args.suite_out_dir, 'tools')
+        utils.copy_file(output=dist_tools_dir, source_dirs=gen_dir0,
+                        to_dir=True)
+        utils.copy_file(output=dist_tools_dir, source_dirs=gen_dir1,
+                        to_dir=True)
+        utils.copy_file(output=self.args.suite_out_dir, sources=run_scripts,
+                        to_dir=True)
+
+        if self.args.configs_dir:
+            dist_configs_dir = os.path.join(self.args.suite_out_dir, 'config')
+            utils.copy_file(output=dist_configs_dir, 
+                            source_dirs=self.args.configs_dir, to_dir=True)
+        if self.args.resources_dir:
+            dist_resources_dir = os.path.join(self.args.suite_out_dir,
+                                              'resource')
+            utils.copy_file(output=dist_resources_dir, 
+                            source_dirs=self.args.resources_dir, to_dir=True)
 
 
 class SuiteArchiveBuilder:
@@ -221,26 +121,240 @@ class SuiteArchiveBuilder:
     def archive_suite(self):
         parser = argparse.ArgumentParser()
         parser.add_argument('--suite_path', help='', required=True)
-        parser.add_argument('--build_enabled', help='', required=True)
+        parser.add_argument('--prebuilts_resource', help='', required=True)
+        parser.add_argument('--suite_archive_dir', help='', required=True)
+        parser.add_argument('--make_archive', help='', required=True)
         args = parser.parse_args(self.arguments)
-        if not args.build_enabled.lower() == 'true':
-            print('build hit not enabled, skip making archive')
+    
+        if not args.make_archive.lower() == 'true':
+            print('make archive disabled')
             return 0
-
+    
         suite_path = args.suite_path
         if not os.path.isdir(suite_path):
             raise Exception("[%s] does not exist" % suite_path)
-
+    
+        copyfiles = args.prebuilts_resource.split(",")
+        for file_path in copyfiles:
+            subprocess.call(["cp", "-rf", file_path, suite_path])
+    
         archive_name = os.path.basename(suite_path)
-        suite_root_path = os.path.dirname(suite_path)
-        shutil.make_archive(suite_path, "zip", suite_root_path, archive_name)
+        archive_root_path = args.suite_archive_dir
+        if not os.path.isdir(archive_root_path):
+            os.mkdir(archive_root_path)
+        # remove the extra output of target "java_prebuilt"
+        # such as ztest-tradefed-common.interface.jar
+        subprocess.call(["find", suite_path, "-name", "*.interface.jar", 
+                        "-exec", "rm", "{}", "+"])
+        shutil.make_archive(os.path.join(archive_root_path, archive_name),
+                            "zip", suite_path)
         return 0
+
+
+class SuiteModuleWithTestbundleBuilder:
+
+    def __init__(self, arguments):
+        self.arguments = arguments
+        self.args = None
+
+    def build_module_with_testbundle(self):
+        parser = argparse.ArgumentParser()
+        parser.add_argument('--build_gen_dir', help='', required=True)
+        parser.add_argument('--build_target_name', help='', required=True)
+        parser.add_argument('--subsystem_name', help='', 
+                            required=False)
+        parser.add_argument('--buildgen_testfile', help='', required=True)
+        parser.add_argument('--project_path', help='', required=True)
+        parser.add_argument('--test_xml', help='', required=False)
+        parser.add_argument('--project_type', help='', required=True)
+        parser.add_argument('--suite_out_dir', help='', required=True)
+        parser.add_argument('--archive_testfile', help='', required=True)
+        parser.add_argument('--apilibrary_deps', help='', required=False)
+        parser.add_argument('--test_files', help='', required=False)
+
+        self.args = parser.parse_args(self.arguments)
+
+        self._create_testsuite(self.args)
+        return 0
+
+    def _create_testsuite(self, args):
+        _test_xml = args.test_xml
+        _testcases_dir = os.path.dirname(args.archive_testfile)
+        _testsuite_name = os.path.basename(args.archive_testfile)\
+            .replace('.hap', '').replace('module_', '')
+        _testcase_xml = os.path.join(_testcases_dir, _testsuite_name + ".xml")
+        _config_file = os.path.join(_testcases_dir,
+                                    _testsuite_name + ".config")
+        _json_file = os.path.join(_testcases_dir, _testsuite_name + ".json")
+      
+        if args.project_type == "js_test_hap":
+            self._generate_json_by_template(_test_xml.replace(".xml", ".json"),
+                                            _testsuite_name, _json_file)
+            dest_file = os.path.join(
+                _testcases_dir, "{}.hap".format(_testsuite_name))            
+            self._copy_file(args.buildgen_testfile, dest_file)
+            os.chmod(dest_file, stat.S_IRWXU|stat.S_IRWXG|stat.S_IRWXO)
+            return
+        if args.project_type == "pythontest":
+            self._generate_json_by_template(_test_xml.replace(".xml", ".json"),
+                                            _testsuite_name, os.path.join(
+                    args.archive_testfile, _testsuite_name + ".json"))
+            utils.copy_file(output=self.args.archive_testfile,
+                            source_dirs=self.args.test_files)
+            return
+        self._check_file_exist(args.buildgen_testfile)
+        self._copy_file(args.buildgen_testfile, args.archive_testfile)
+        if args.project_type == "app":
+            return
+        self._record_testmodule_info(args.build_target_name,
+                                     _testsuite_name,
+                                     _testcases_dir)
+        if _test_xml and os.path.exists(_test_xml):
+            self._copy_file(_test_xml, _config_file)
+        elif _test_xml.replace(".xml", ".json") and \
+                os.path.exists(_test_xml.replace(".xml", ".json")):
+            self._generate_json_by_template(_test_xml.replace(".xml", ".json"),
+                                            _testsuite_name, _json_file)
+        else:
+            self._generate_xml_by_template(_test_xml, _testsuite_name,
+                                           _config_file)
+        #self._generate_testcase_xml(args)
+        _resource_srcroot = _get_resource_rootpath(args.project_path)
+        try:
+            self._archive_test_resource(_config_file, _resource_srcroot,
+                                        args.suite_out_dir)
+        except Exception as error:
+            print("Archive resource error: %s" % error, file=sys.stderr)
+        self._archive_test_file_to_testcase(_testcases_dir)
+
+    @staticmethod
+    def _record_testmodule_info(build_target_name, module_name, testcases_dir):
+        if not build_target_name or not module_name:
+            raise ValueError(
+                    'Ethire build_target_name or module_name is invalid')
+
+        module_info_list_file = os.path.join(testcases_dir, 'module_info.list')
+        lines = []
+        if os.path.isfile(module_info_list_file):
+            with open(module_info_list_file, 'r') as file_read:
+                for line in file_read:
+                    lines.append(line.strip())
+
+        new_lines = ['%s %s' % (build_target_name, module_name)]
+        for line in lines:
+            arr = line.strip().split(' ')
+            if len(arr) == 0 or arr[0] == build_target_name:
+                continue
+            new_lines.append(line)
+    
+        # add module info
+        with open(module_info_list_file, 'w') as file_write:
+            file_write.write('\n'.join(new_lines) + '\n')
+
+
+    @staticmethod
+    def _generate_json_by_template(source_file, module_name, dest_file):
+        source_content = utils.read_file(source_file)
+        values = {"module": module_name}
+        xml_content = Template(source_content).substitute(values)
+        utils.write_file(dest_file, xml_content, False)
+
+    @staticmethod
+    def _generate_xml_by_template(test_xml, module_name,
+                                  config_file):
+        # find the template file
+        index = test_xml.rfind(".xml")
+        tmpl_file = test_xml[:index] + ".tmpl"
+        if not os.path.exists(tmpl_file):
+            raise Exception("Can't find the Test.xml or "
+                            "Test.tmpl in the path %s " %
+                            os.path.dirname(test_xml))
+        tmpl_content = utils.read_file(tmpl_file)
+        values = {"module": module_name}
+        xml_content = Template(tmpl_content).substitute(values)
+        utils.write_file(config_file, xml_content, False)
+
+    def _copy_file(self, source, target):
+        if not os.path.exists(os.path.dirname(target)):
+            os.makedirs(os.path.dirname(target))
+        if not os.path.exists(target) or (
+                os.path.exists(target) and
+                (os.stat(target).st_mtime != os.stat(source).st_mtime)):
+            print('Trying to copy "%s" to "%s"' % (source, target))
+            subprocess.call(["rm", "-rf", target])
+            subprocess.call(["cp", "-rf", source, target])
+
+    def _copy_file_to_target(self, source_file, dest_file):
+        if not os.path.exists(source_file):
+            print("[ERROR] source_file is not exist. %s" % source_file,
+                  file=sys.stderr)
+            return
+        else:
+            self._copy_file(source_file, dest_file)
+
+    def _archive_test_resource(self, xml_file, root_dir, resource_dir):
+        _pattern = re.compile("[-=]>")
+        if os.path.exists(xml_file):
+            try:
+                dom = xml.dom.minidom.parse(xml_file)
+                childroot = dom.getElementsByTagName("target_preparer")
+                for child in childroot:
+                    for child_atrr in child.getElementsByTagName("option"):
+                        name = child_atrr.getAttribute("name")
+                        attr_value = child_atrr.getAttribute("value")
+                        value = _pattern.split(attr_value)[0].strip()
+                        if name != "" or value != "":
+                            if name == "push" and \
+                                    value.startswith("resource/"):
+                                self._copy_file_to_target(
+                                    os.path.join(root_dir, "../", value),
+                                    os.path.join(resource_dir, value))
+                        else:
+                            raise Exception("Test.xml node name and "
+                                            "value not is null")
+            except IOError as error:
+                print("IO Error: %s" % error, file=sys.stderr)
+            except ExpatError as error:
+                print("ExpatError Error: %s" % error, file=sys.stderr)
+            finally:
+                pass
+        else:
+            with open(xml_file.replace(".config", ".json"),
+                      "r", encoding="UTF-8") as json_file:
+                json_str = json.load(json_file)
+                kits = json_str["kits"]
+                for kit in kits:
+                    types = kit["type"]
+                    if types == "PushKit":
+                        push_resources = kit["push"]
+                        for resource in push_resources:
+                            value = _pattern.split(resource)[0].strip()
+                            if value.startswith("resource/"):
+                                self._copy_file_to_target(
+                                    os.path.join(root_dir, "../", value),
+                                    os.path.join(resource_dir, value))
+
+    def _archive_test_file_to_testcase(self, cases_dir):
+        if self.args.test_files is None:
+            return
+        arr_test_files = self.args.test_files.split(',')
+        for file in arr_test_files:
+            if file == "":
+                continue
+            self._copy_file_to_target(file,
+                                      os.path.join(cases_dir,
+                                                   os.path.basename(file)))
+
+    def _check_file_exist(self, file_path):
+        if not os.path.exists(file_path):
+            raise Exception("File [%s] does not exist!" % file_path)
 
 
 ACTION_MAP = {"build_module": "SuiteModuleBuilder",
               "build_xdevice": "XDeviceBuilder",
               "archive_suite": "SuiteArchiveBuilder",
-              }
+              "build_module_with_testbundle":
+                  "SuiteModuleWithTestbundleBuilder"}
 
 
 def _find_action(action, arguments):
