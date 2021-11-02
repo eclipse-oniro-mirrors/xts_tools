@@ -220,11 +220,6 @@ class SuiteModuleWithTestbundleBuilder:
                                            _config_file)
         #self._generate_testcase_xml(args)
         _resource_srcroot = _get_resource_rootpath(args.project_path)
-        try:
-            self._archive_test_resource(_config_file, _resource_srcroot,
-                                        args.suite_out_dir)
-        except Exception as error:
-            print("Archive resource error: %s" % error, file=sys.stderr)
         self._archive_test_file_to_testcase(_testcases_dir)
 
     @staticmethod
