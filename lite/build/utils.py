@@ -64,7 +64,6 @@ _NO_FILTE_SUB_SYSTEM_LIST = [
     "telephony",
     "dcts",
     "hiviewdfx",
-    "communication",
     "security",
     "update",
     "sstsutils",
