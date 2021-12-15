@@ -9,7 +9,8 @@
       "inner_kits": [],
       "system_kits": [],
       "test_list": [
-        "//test/xts/acts:acts"
+        "//test/xts/acts:acts",
+        "//test/xts/hats:hats"
       ]
     },
     "ivi_tests": {
