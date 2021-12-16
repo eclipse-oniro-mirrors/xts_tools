@@ -20,6 +20,7 @@ declare_args() {
   TESTCONFIG_FILENAME = "Test.xml"
   XTS_ROOT = "//test/xts"
   ACTS_ROOT = "//test/xts/acts"
+  HATS_ROOT = "//test/xts/hats"
 
   # create testsuite archive is time-consuming, do it only if necessary
   make_archive = false
