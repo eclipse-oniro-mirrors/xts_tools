@@ -1152,6 +1152,20 @@
             "build_targets": {}
         },
         {
+            "path": "interface/sdk-js/api/@ohos.app.agent.taskManager.d.ts",
+            "bundle_name": [
+                "ability_runtime"
+            ],
+            "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/zh-cn/api/@ohos.app.agent.taskManager.d.ts",
+            "bundle_name": [
+                "ability_runtime"
+            ],
+            "build_targets": {}
+        },
+        {
             "path": "interface/sdk-js/api/@ohos.app.agent.agentManager.d.ts",
             "bundle_name": [
                 "ability_runtime"
