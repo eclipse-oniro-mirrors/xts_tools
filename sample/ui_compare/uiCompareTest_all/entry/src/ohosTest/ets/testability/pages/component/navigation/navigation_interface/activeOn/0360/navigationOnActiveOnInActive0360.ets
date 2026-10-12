@@ -48,7 +48,7 @@ class DerivedNavPathStack extends NavPathStack {
 
 @Entry
 @Component
-struct NavigationOnActiveOnInActive0360 {
+export struct NavigationOnActiveOnInActive0360 {
   private pathStack: DerivedNavPathStack = new DerivedNavPathStack();
 
   build() {

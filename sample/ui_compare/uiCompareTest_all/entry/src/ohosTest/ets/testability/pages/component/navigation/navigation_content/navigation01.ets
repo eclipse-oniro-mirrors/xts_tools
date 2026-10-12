@@ -16,7 +16,7 @@ import { LengthMetrics } from '@kit.ArkUI';
 
 @Entry
 @Component
-struct Navigation01 {
+export struct Navigation01 {
   @State str1:string = ''
   @State pageInfos: NavPathStack = new NavPathStack();
   @State titleBar:boolean = false

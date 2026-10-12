@@ -24,7 +24,7 @@ function dialog0630Builder() {
 }
 
 @CustomDialog
-struct Dialog0630 {
+export struct Dialog0630 {
   controller?: CustomDialogController;
 
   build() {

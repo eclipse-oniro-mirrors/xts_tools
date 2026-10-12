@@ -37,7 +37,7 @@ function dynamicBuilder0210(name: string, param: Object) {
 
 @Entry
 @Component
-struct NavigationOnActiveOnInActive0210 {
+export struct NavigationOnActiveOnInActive0210 {
   private pathStack: NavPathStack = new NavPathStack();
 
   build() {
