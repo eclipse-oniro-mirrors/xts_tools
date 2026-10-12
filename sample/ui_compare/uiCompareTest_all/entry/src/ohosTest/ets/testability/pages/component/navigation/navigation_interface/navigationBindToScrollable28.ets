@@ -22,7 +22,7 @@
 
 @Entry
 @Component
-struct NavigationBindToScrollable28 {
+export struct NavigationBindToScrollable28 {
   private pathStack: NavPathStack = new NavPathStack();
   private parentWaterFlowController: Scroller = new Scroller();
   private gridController: Scroller = new Scroller();
@@ -79,7 +79,7 @@ export function pageOneBuilder(name: string, param: Object) {
 }
 
 @Component
-struct PageOne {
+export struct PageOne {
   private parentWaterFlowController: Scroller = new Scroller();
   private gridController: Scroller = new Scroller();
   private scrollController: Scroller = new Scroller();
