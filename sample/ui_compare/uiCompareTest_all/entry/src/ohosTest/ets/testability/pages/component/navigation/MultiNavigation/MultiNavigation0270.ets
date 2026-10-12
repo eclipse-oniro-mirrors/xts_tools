@@ -15,7 +15,7 @@
 
 // PageHome1 组件 - 显示在左侧
 @Component
-struct PageHome1Content {
+export struct PageHome1Content {
   build() {
     Column() {
       Text('PageHome1 页面')
@@ -42,7 +42,7 @@ struct PageHome1Content {
 
 // PageDetail2 组件 - 显示在右侧
 @Component
-struct PageDetail2 {
+export struct PageDetail2 {
   build() {
     NavDestination() {
       Column() {
@@ -73,7 +73,7 @@ struct PageDetail2 {
 
 @Entry
 @Component
-struct MultiNavigation0270 {
+export struct MultiNavigation0270 {
   @State resultText: string = '结果显示区域';
   @State currentMode: NavigationMode = NavigationMode.Split;
   private navPathStack: NavPathStack = new NavPathStack();

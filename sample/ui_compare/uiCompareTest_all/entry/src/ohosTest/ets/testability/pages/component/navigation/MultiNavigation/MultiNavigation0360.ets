@@ -19,7 +19,7 @@ interface ParamInfo0360 {
 
 // PageFull1 组件
 @Component
-struct PageFull10360 {
+export struct PageFull10360 {
   build() {
     NavDestination() {
       Column() {
@@ -45,7 +45,7 @@ struct PageFull10360 {
 
 @Entry
 @Component
-struct MultiNavigation0360 {
+export struct MultiNavigation0360 {
   @State resultText: string = '结果显示区域';
   @State lifecycleLog: string[] = [];
   private navPathStack: NavPathStack = new NavPathStack();

@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 import { hilog } from '@kit.PerformanceAnalysisKit';
-import { ComponentNavNavigationBack0291_A } from './ComponentNavNavigationBack0291_A.ets'
-import { ComponentNavNavigationBack0291_B } from './ComponentNavNavigationBack0291_B.ets'
+import { ComponentNavNavigationBack0291A } from './ComponentNavNavigationBack0291_A.ets'
+import { ComponentNavNavigationBack0291B } from './ComponentNavNavigationBack0291_B.ets'
 import { Pages } from './ComponentNavNavigationBack0291_B.ets'
 
 interface GeneratedTypeLiteralInterface_1 {
@@ -23,7 +23,7 @@ interface GeneratedTypeLiteralInterface_1 {
 
 @Entry
 @Component
-struct ComponentNavNavigationBack0291001 {
+export struct ComponentNavNavigationBack0291001 {
   @Provide('pageInfos') pageInfos: NavPathStack = new NavPathStack()
   @State mode:NavigationMode=NavigationMode.Auto
   @State titleMode:NavigationTitleMode=NavigationTitleMode.Free
