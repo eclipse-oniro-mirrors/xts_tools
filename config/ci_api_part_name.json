@@ -21345,6 +21345,20 @@
                 "form_fwk"
             ],
             "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/api/@ohos.arkui.placeholderRegister.d.ts",
+            "bundle_name": [
+                "ace_engine"
+            ],
+            "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/api/@ohos.arkui.placeholderRegister.static.d.ets",
+            "bundle_name": [
+                "ace_engine"
+            ],
+            "build_targets": {}
         }
     ],
     "sdk_c": [
@@ -23051,5 +23065,6 @@
             ],
             "build_targets": {}
         }
+
     ]
 }
