@@ -15,7 +15,7 @@
 
 @Entry
 @Component
-struct SideBarContainer03 {
+export struct SideBarContainer03 {
   normalIcon: Resource = $r('app.media.icon');
   selectedIcon: Resource = $r('app.media.icon');
   @State arr: number[] = [1, 2, 3];

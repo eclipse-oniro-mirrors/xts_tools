@@ -22,7 +22,7 @@
 
 @Entry
 @Component
-struct NavigationMTBF27 {
+export struct NavigationMTBF27 {
   private pathStack: NavPathStack = new NavPathStack();
 
   build() {
@@ -62,7 +62,7 @@ export function pageOneBuilder(name: string, param: Object) {
 }
 
 @Component
-struct PageOne {
+export struct PageOne {
   private pathStack: NavPathStack | null = null;
 
   build() {
