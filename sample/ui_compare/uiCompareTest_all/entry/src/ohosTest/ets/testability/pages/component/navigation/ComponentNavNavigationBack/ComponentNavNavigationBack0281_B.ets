@@ -14,7 +14,7 @@
  */
 @Entry
 @Component
-struct ComponentNavNavigationBack0281B {
+export struct ComponentNavNavigationBack0281B {
   @Consume('pageInfos') pageInfos: NavPathStack
   build() {
     NavDestination() {

@@ -16,7 +16,7 @@ import fileio from '@ohos.fileio';
 import { image } from '@kit.ImageKit';
 @Entry
 @Component
-struct ComponentNavNavigationBack0281A {
+export struct ComponentNavNavigationBack0281A {
   @Consume('pageInfos') pageInfos: NavPathStack
   @State backButtonIcon:string | PixelMap | Resource= 'AAA'
   build() {

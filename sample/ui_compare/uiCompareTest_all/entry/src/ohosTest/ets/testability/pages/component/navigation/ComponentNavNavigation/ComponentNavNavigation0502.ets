@@ -16,7 +16,7 @@
 
 @Entry
 @Component
-struct ComponentNavNavigation0502 {
+export struct ComponentNavNavigation0502 {
   private arr: number[] = [0, 1, 2, 3, 4, 5, 6,7]
   @State currentIndex: number = 0
   @State barStyle: BarStyle = BarStyle.STANDARD

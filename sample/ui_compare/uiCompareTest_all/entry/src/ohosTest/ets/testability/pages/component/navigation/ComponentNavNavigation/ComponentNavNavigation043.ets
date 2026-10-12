@@ -15,7 +15,7 @@
 
 @Entry
 @Component
-struct ComponentNavNavigation043 {
+export struct ComponentNavNavigation043 {
   @State titlemode:NavigationTitleMode = NavigationTitleMode.Mini
   @State mode:NavigationMode = NavigationMode.Stack
   @State title:NavigationCommonTitle = {main:'主标题超长文本主标题超长文本主标题超长文本主标题超长文本主标题超长文本主标题超长文本主标题超长文本主标题超长文本主标题超长文本主标题超长文本',sub:'副标题超长文本副标题超长文本副标题超长文本副标题超长文本副标题超长文本副标题超长文本副标题超长文本副标题超长文本副标题超长文本副标题超长文本'}

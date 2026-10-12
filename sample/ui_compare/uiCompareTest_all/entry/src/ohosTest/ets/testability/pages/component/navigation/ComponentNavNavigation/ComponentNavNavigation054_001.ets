@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 import { hilog } from '@kit.PerformanceAnalysisKit';
-import { ComponentNavNavigation054_A } from './ComponentNavNavigation054_A'
+import { ComponentNavNavigation054A } from './ComponentNavNavigation054_A'
 
 interface GeneratedTypeLiteralInterface_1 {
   pageInfos?: NavPathStack;
@@ -21,7 +21,7 @@ interface GeneratedTypeLiteralInterface_1 {
 
 @Entry
 @Component
-struct ComponentNavNavigation054001 {
+export struct ComponentNavNavigation054001 {
   @Provide('pageInfos') pageInfos: NavPathStack = new NavPathStack()
   @Builder
   PageMap(name: string) {
