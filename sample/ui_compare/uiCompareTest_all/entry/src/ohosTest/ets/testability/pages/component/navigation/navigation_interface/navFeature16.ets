@@ -18,7 +18,7 @@ import { MainTitleModifier1, MainTitleModifier2 } from './navFeatureUtils';
 
 @Entry
 @Component
-struct NavFeature16 {
+export struct NavFeature16 {
   @State mainTitleModifier: TextModifier | null = null;
   @State mainTitleUseStyle1: boolean = true;
   @State titleMode: NavigationTitleMode = NavigationTitleMode.Full;

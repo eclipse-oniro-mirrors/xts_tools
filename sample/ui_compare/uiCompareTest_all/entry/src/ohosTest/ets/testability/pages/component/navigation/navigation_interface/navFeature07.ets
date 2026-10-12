@@ -18,7 +18,7 @@ import { EmptyTextModifier } from './navFeatureUtils';
 
 @Entry
 @Component
-struct NavFeature07 {
+export struct NavFeature07 {
   @State mainTitleModifier: TextModifier | null = null;
   @State subTitleModifier: TextModifier | null = null;
   @State showSubWindow: boolean = false;

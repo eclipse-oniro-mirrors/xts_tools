@@ -18,7 +18,7 @@ import { MainTitleModifier1, SubTitleModifier1 } from './navFeatureUtils';
 
 @Entry
 @Component
-struct NavFeature14 {
+export struct NavFeature14 {
   @State mainTitleModifier: TextModifier | null = null;
   @State subTitleModifier: TextModifier | null = null;
 

@@ -17,7 +17,7 @@ import { TextModifier } from '@kit.ArkUI';
 
 @Entry
 @Component
-struct NavFeature12 {
+export struct NavFeature12 {
   @State mainTitleModifier: TextModifier | null = null;
   @State subTitleModifier: TextModifier | null = null;
 

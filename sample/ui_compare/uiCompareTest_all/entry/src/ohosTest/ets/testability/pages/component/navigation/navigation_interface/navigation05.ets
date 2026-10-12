@@ -15,7 +15,7 @@
 
 @Entry
 @Component
-struct Navigation05 {
+export struct Navigation05 {
   stack: NavPathStack = new NavPathStack();
   @State mode:NavigationMode = NavigationMode.Stack;
   @State titleMode:NavigationTitleMode = NavigationTitleMode.Free;
@@ -51,7 +51,7 @@ export function pageThreeBuilder(name: string, param: Object) {
 }
 
 @Component
-struct PageThreeComponent {
+export struct PageThreeComponent {
   @State eventStr: string = '';
   @State name: string = 'pageThree';
   @State destWidth: string = '100%';

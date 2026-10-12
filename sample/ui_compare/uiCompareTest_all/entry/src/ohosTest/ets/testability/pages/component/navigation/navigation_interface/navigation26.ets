@@ -15,7 +15,7 @@
 
 @Entry
 @Component
-struct Navigation26 {
+export struct Navigation26 {
   private arr: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
   @State currentIndex: number = 0;
   @State titleText:string = 'Navigation26';

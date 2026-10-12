@@ -21,7 +21,7 @@ class A {
 
 @Entry
 @Component
-struct Navigation02 {
+export struct Navigation02 {
   private arr: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
   @State currentIndex: number = 0;
 

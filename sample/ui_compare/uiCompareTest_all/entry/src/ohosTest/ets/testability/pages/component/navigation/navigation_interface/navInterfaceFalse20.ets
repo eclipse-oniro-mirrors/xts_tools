@@ -15,7 +15,7 @@
 
 @Entry
 @Component
-struct NavInterfaceFalse20 {
+export struct NavInterfaceFalse20 {
   private pathStack: NavPathStack = new NavPathStack();
   @State showButtons: boolean = false;
 
