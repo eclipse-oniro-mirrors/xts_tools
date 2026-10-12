@@ -31,6 +31,9 @@ import FocusDynamicEffect from './FocusDynamicEffectTest/FocusDynamicEffect.test
 import ComponentTextHalfLeading from './ComponentTextHalfLeadingTest/ComponentTextHalfLeading.test'
 import ComponentTextTextUI from './ComponentTextTextUITest/ComponentTextTextUI.test'
 import ComponentTextTextInterface from './ComponentTextTextInterfaceTest/ComponentTextTextInterface.test'
+import PopToName from './PopToNameTest/PopToName.test'
+import MediaImageSpanError from './MediaImageSpanErrorTest/MediaImageSpanError.test'
+import PropertyAnmationAnimations from './PropertyAnmationAnimationsTest/PropertyAnmationAnimations.test'
 import GaugeContentmodifier from './GaugeContentmodifierTest/GaugeContentmodifier.test'
 import AnimateTo from './AnimateToTest/AnimateTo.test'
 import Builder from './BuilderTest/Builder.test'
@@ -48,6 +51,7 @@ import ComponentProgressLinear from './ComponentProgressLinearTest/ComponentProg
 import ProgressCommonLocation from './ProgressCommonLocationTest/ProgressCommonLocation.test'
 import ProgressAdaptiveAging from './ProgressAdaptiveAgingTest/ProgressAdaptiveAging.test'
 import TextClockPrefixed from './TextClockPrefixedTest/TextClockPrefixed.test'
+import CounterUxconsistency from './CounterUxconsistencyTest/CounterUxconsistency.test'
 import DialogSpecificationsHand from './DialogSpecificationsHandTest/DialogSpecificationsHand.test'
 import DialogSpecificationsUi from './DialogSpecificationsUiTest/DialogSpecificationsUi.test'
 import CustomDialogInterface from './CustomDialogInterfaceTest/CustomDialogInterface.test'
@@ -93,6 +97,7 @@ import NodecontainerRender from './NodecontainerRenderTest/NodecontainerRender.t
 import InfomationGaugeEffect from './InfomationGaugeEffectTest/InfomationGaugeEffect.test'
 import LoadingprogressAnimation from './LoadingprogressAnimationTest/LoadingprogressAnimation.test'
 import ProgressBorderradius from './ProgressBorderradiusTest/ProgressBorderradius.test'
+import ComponentNavNavigation from './ComponentNavNavigationTest/ComponentNavNavigation.test'
 import NavNavigationAction from './NavNavigationActionTest/NavNavigationAction.test'
 import ActionsheetInterface from './ActionsheetInterfaceTest/ActionsheetInterface.test'
 import PopupboxInverse from './PopupboxInverseTest/PopupboxInverse.test'
@@ -137,6 +142,9 @@ export default function testsuite() {
   ComponentTextHalfLeading();
   ComponentTextTextUI();
   ComponentTextTextInterface();
+  PopToName();
+  MediaImageSpanError();
+  PropertyAnmationAnimations();
   GaugeContentmodifier();
   AnimateTo();
   Builder();
@@ -154,6 +162,7 @@ export default function testsuite() {
   ProgressCommonLocation();
   ProgressAdaptiveAging();
   TextClockPrefixed();
+  CounterUxconsistency();
   DialogSpecificationsHand();
   DialogSpecificationsUi();
   CustomDialogInterface();

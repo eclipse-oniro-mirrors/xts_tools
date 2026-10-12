@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (c) 2025 Shenzhen Kaihong Digital Industry Development Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -12,7 +12,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { Driver, ON } from '@kit.TestKit'
+
+import {Driver , ON} from '@ohos.UiTest'
 
 export default class Utils {
 
@@ -33,7 +34,7 @@ export default class Utils {
 
   static  async clickComponentByKey (componentKey :string){
      let driver = Driver.create();
-     let component = await driver.waitForComponent(ON.id(componentKey), 1000)
+     let component = await driver.findComponent(ON.id(componentKey))
      await component.click();
 
   }

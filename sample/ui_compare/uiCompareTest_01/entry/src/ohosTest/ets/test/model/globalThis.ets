@@ -12,7 +12,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { common } from '@kit.AbilityKit'
+
+import common from '@ohos.app.ability.common'
 
 // 构造单例对象
 

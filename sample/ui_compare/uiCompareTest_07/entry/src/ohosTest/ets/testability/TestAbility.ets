@@ -12,18 +12,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { bundleManager } from '@kit.AbilityKit';
-import { abilityAccessCtrl } from '@kit.AbilityKit';
-import { UIAbility } from '@kit.AbilityKit';
+
+import bundleManager from '@ohos.bundle.bundleManager';
+import abilityAccessCtrl from '@ohos.abilityAccessCtrl';
+import UIAbility from '@ohos.app.ability.UIAbility';
 import AbilityDelegatorRegistry from '@ohos.app.ability.abilityDelegatorRegistry';
-import { hilog } from '@kit.PerformanceAnalysisKit';
+import hilog from '@ohos.hilog';
 import { Hypium } from '@ohos/hypium';
 import testsuite from '../test/List.test';
-import { window } from '@kit.ArkUI';
+import window from '@ohos.window';
 import Logger from '../test/model/Logger'
 import { GlobalThis } from '../test/model/globalThis'
-import { Want } from '@kit.AbilityKit'
-import { AbilityConstant } from '@kit.AbilityKit';
+import Want from '@ohos.app.ability.Want'
+import AbilityConstant from '@ohos.app.ability.AbilityConstant';
 
 
 const TAG: string = '[TEST]'

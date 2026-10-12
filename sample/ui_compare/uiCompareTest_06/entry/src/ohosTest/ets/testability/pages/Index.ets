@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { hilog } from '@kit.PerformanceAnalysisKit';
+import hilog from '@ohos.hilog';
 
 @Entry
 @Component

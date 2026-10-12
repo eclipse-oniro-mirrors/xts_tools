@@ -47,6 +47,7 @@ import UIComponentListAndGridGridEventEnhancement from './UIComponentListAndGrid
 import UiComponentMediaCalendarPickerDate from './UiComponentMediaCalendarPickerDate/UiComponentMediaCalendarPickerDate.test'
 import UiComponentMediaTextPickerColumnWidths from './UiComponentMediaTextPickerColumnWidths/UiComponentMediaTextPickerColumnWidths.test'
 import UiComponentMediaTimepickerStartEndTime from './UiComponentMediaTimepickerStartEndTime/UiComponentMediaTimepickerStartEndTime.test'
+import UIComponentPopupBoxSpecifications from './UIComponentPopupBoxSpecifications/UIComponentPopupBoxSpecifications.test'
 import UiComponentSpecialComponentsUiContextAbility from './UiComponentSpecialComponentsUiContextAbility/UiComponentSpecialComponentsUiContextAbility.test'
 import UiComponentTextRichEditorHandleAnimation from './UiComponentTextRichEditorHandleAnimation/UiComponentTextRichEditorHandleAnimation.test'
 import UiComponentTextRichEditorLineBreakStrategy from './UiComponentTextRichEditorLineBreakStrategy/UiComponentTextRichEditorLineBreakStrategy.test'
@@ -83,6 +84,7 @@ export default function testsuite() {
   UiComponentMediaCalendarPickerDate();
   UiComponentMediaTextPickerColumnWidths();
   UiComponentMediaTimepickerStartEndTime();
+  UIComponentPopupBoxSpecifications();
   UiComponentSpecialComponentsUiContextAbility();
   UiComponentTextRichEditorHandleAnimation();
   UiComponentTextRichEditorLineBreakStrategy();

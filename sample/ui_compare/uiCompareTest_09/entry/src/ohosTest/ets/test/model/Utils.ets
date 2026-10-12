@@ -12,9 +12,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { Driver, ON } from '@kit.TestKit'
-import { uiAppearance } from '@kit.ArkUI'
-import { BusinessError } from '@kit.BasicServicesKit';
+
+import {Driver , ON} from '@ohos.UiTest'
+import uiAppearance from '@ohos.uiAppearance'
+import { BusinessError } from '@ohos.base';
 
 export default class Utils {
 

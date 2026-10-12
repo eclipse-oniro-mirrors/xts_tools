@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { Driver, ON } from '@kit.TestKit'
+import {Driver , ON} from '@ohos.UiTest'
 
 export default class Utils {
 

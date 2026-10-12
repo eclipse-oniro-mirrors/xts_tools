@@ -90,11 +90,13 @@ import UiComponentTextRicheditorDarkandbase from './UiComponentTextRicheditorDar
 import UiComponentTextRicheditorGundongtiao from './UiComponentTextRicheditorGundongtiaoTest/UiComponentTextRicheditorGundongtiao.test';
 import UiComponentTextRicheditorSetselection from './UiComponentTextRicheditorSetselectionTest/UiComponentTextRicheditorSetselection.test';
 import UiComponentTextRicheditorAction from './UiComponentTextRicheditorActionTest/UiComponentTextRicheditorAction.test';
+import AceFocusDynamicEffect from './AceFocusDynamicEffectTest/AceFocusDynamicEffect.test';
 import ToolchainDirecthsp from './ToolchainDirecthspTest/ToolchainDirecthsp.test';
 import UiComponentTextRicheditorAiColor from './UiComponentTextRicheditorAiColorTest/UiComponentTextRicheditorAiColor.test';
 import UiComponentTextRicheditorCustommenu from './UiComponentTextRicheditorCustommenuTest/UiComponentTextRicheditorCustommenu.test';
 import UiComponentTextRicheditorHandleAnimation from './UiComponentTextRicheditorHandleAnimationTest/UiComponentTextRicheditorHandleAnimation.test';
 import UiComponentTextRicheditorSetStyledString from './UiComponentTextRicheditorSetStyledStringTest/UiComponentTextRicheditorSetStyledString.test';
+import UiMotionAnimationExplicitanmationInterface from './UiMotionAnimationExplicitanmationInterfaceTest/UiMotionAnimationExplicitanmationInterface.test';
 import UiComponentTextTv from './UiComponentTextTvTest/UiComponentTextTv.test';
 import ToolchainHspandbundlename from './ToolchainHspandbundlenameTest/ToolchainHspandbundlename.test';
 import UiComponentNavNavigationServiceQuit from './UiComponentNavNavigationServiceQuitTest/UiComponentNavNavigationServiceQuit.test';
@@ -207,11 +209,13 @@ export default function testsuite() {
   RoutingRedirection();
   RoutingNamedRoutesInterface();
   UiAbilityPage();
+  AceFocusDynamicEffect();
   ToolchainDirecthsp();
   UiComponentTextRicheditorAiColor();
   UiComponentTextRicheditorCustommenu();
   UiComponentTextRicheditorHandleAnimation();
   UiComponentTextRicheditorSetStyledString();
+  UiMotionAnimationExplicitanmationInterface();
   UiComponentTextTv();
   ToolchainHspandbundlename();
   UiComponentNavNavigationServiceQuit();
