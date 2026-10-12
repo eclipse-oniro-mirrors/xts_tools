@@ -9138,7 +9138,20 @@
             ],
             "build_targets": {}
         },
-
+        {
+            "path": "interface/sdk-js/api/@ohos.multimodalAwareness.behaviorAwareness.d.ts",
+            "bundle_name": [
+                "device_status"
+            ],
+            "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/zh-cn/api/@ohos.multimodalAwareness.behaviorAwareness.d.ts",
+            "bundle_name": [
+                "device_status"
+            ],
+            "build_targets": {}
+        },
         {
             "path": "interface/sdk-js/api/@ohos.multimodalAwareness.deviceStatus.d.ts",
             "bundle_name": [
