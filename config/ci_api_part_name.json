@@ -23064,6 +23064,13 @@
                 "drivers_interface_midi"
             ],
             "build_targets": {}
+        },
+        {
+            "path": "drivers/interface/nearlink",
+            "bundle_name": [
+                "drivers_interface_nearlink"
+            ],
+            "build_targets": {}
         }
 
     ]
