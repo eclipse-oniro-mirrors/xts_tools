@@ -11624,6 +11624,20 @@
             "build_targets": {}
         },
         {
+            "path": "interface/sdk-js/api/@internal/component/ets/scroll_common.d.ts",
+            "bundle_name": [
+                "ace_engine"
+            ],
+            "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/zh-cn/api/@internal/component/ets/scroll_common.d.ts",
+            "bundle_name": [
+                "ace_engine"
+            ],
+            "build_targets": {}
+        },
+        {
             "path": "interface/sdk-js/api/@internal/component/ets/canvas.d.ts",
             "bundle_name": [
                 "ace_engine"
@@ -19101,6 +19115,20 @@
         },
         {
             "path": "interface/sdk-js/zh-cn/api/arkui/component/scroll.static.d.ets",
+            "bundle_name": [
+                "ace_engine"
+            ],
+            "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/api/arkui/component/scrollCommon.static.d.ets",
+            "bundle_name": [
+                "ace_engine"
+            ],
+            "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/zh-cn/api/arkui/component/scrollCommon.static.d.ets",
             "bundle_name": [
                 "ace_engine"
             ],
