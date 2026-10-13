@@ -18,7 +18,7 @@ import { MainTitleModifier1, EmptyTextModifier } from './navFeatureUtils';
 
 @Entry
 @Component
-struct NavFeature17 {
+export struct NavFeature17 {
   @State mainTitleModifier: TextModifier | null = null;
 
   build() {

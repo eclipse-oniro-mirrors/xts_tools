@@ -16,7 +16,7 @@
 
 @Entry
 @Component
-struct NavNavigationAction800 {
+export struct NavNavigationAction800 {
 
   private arr: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
   @State index: number = 1

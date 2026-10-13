@@ -29,7 +29,7 @@ function customTitleBuilder() {
 
 @Entry
 @Component
-struct NavFeature21 {
+export struct NavFeature21 {
   @State mainTitleModifier: TextModifier | null = null;
   @State mainTitleUseStyle1: boolean = true;
   @State titleMode: NavigationTitleMode = NavigationTitleMode.Full;

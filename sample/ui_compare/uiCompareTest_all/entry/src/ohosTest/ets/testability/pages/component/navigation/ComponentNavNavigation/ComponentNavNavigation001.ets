@@ -15,7 +15,7 @@
 import { hilog } from '@kit.PerformanceAnalysisKit';
 @Entry
 @Component
-struct ComponentNavNavigation001 {
+export struct ComponentNavNavigation001 {
   @Provide('pageInfos') pageInfos: NavPathStack = new NavPathStack()
   @State titleMode:NavigationTitleMode=NavigationTitleMode.Free
   @Builder

@@ -22,7 +22,7 @@
 
 @Entry
 @Component
-struct NavigationBindToScrollable22 {
+export struct NavigationBindToScrollable22 {
   private pathStack: NavPathStack = new NavPathStack();
   private firstGridController: Scroller = new Scroller();
   private secondGridController: Scroller = new Scroller();
@@ -81,7 +81,7 @@ export function pageOneBuilder(name: string, param: Object) {
 }
 
 @Component
-struct PageOne {
+export struct PageOne {
   private firstGridController: Scroller = new Scroller();
   private secondGridController: Scroller = new Scroller();
   private items: number[] = [1, 2, 3, 4, 5];

@@ -37,7 +37,7 @@ import { hilog } from '@kit.PerformanceAnalysisKit';
 
 @Entry
 @ComponentV2
-struct NavigationDFX0510 {
+export struct NavigationDFX0510 {
   @Local navPathStack: NavPathStack = new NavPathStack();
   @Local testLog: string[] = [];
 

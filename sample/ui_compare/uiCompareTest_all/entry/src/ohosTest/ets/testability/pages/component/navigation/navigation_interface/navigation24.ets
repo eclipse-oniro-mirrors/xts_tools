@@ -15,7 +15,7 @@
 
 @Entry
 @Component
-struct Navigation24 {
+export struct Navigation24 {
   private arr: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
   @State currentIndex: number = 0;
   @State hideToolBarSet:boolean = false;

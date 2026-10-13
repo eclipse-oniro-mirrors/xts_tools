@@ -15,7 +15,7 @@
 
 @Entry
 @Component
-struct Tabs10 {
+export struct Tabs10 {
   @State text: string = '文本';
   @State barMode: BarMode = BarMode.Fixed;
   @State vertical:boolean = false;

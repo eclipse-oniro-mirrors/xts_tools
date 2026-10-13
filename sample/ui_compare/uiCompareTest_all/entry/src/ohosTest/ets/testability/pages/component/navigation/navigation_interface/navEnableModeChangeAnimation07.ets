@@ -14,7 +14,7 @@
 
 @Entry
 @Component
-struct NavEnableModeChangeAnimation07 {
+export struct NavEnableModeChangeAnimation07 {
   @State showBasicScene: boolean = false;
   @State enableModeChangeAnimation: boolean | null | undefined = undefined;
   @State navigationMode: NavigationMode = NavigationMode.Stack;

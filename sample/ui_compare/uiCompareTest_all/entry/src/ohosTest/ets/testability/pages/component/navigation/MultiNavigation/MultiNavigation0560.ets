@@ -19,7 +19,7 @@ interface ParamInfo0560 {
 
 // PageFull1 组件 - 全屏页
 @Component
-struct PageFull10560 {
+export struct PageFull10560 {
   private navPathStack: NavPathStack = new NavPathStack();
   @State resultText: string = '';
 
@@ -88,7 +88,7 @@ struct PageFull10560 {
 
 // PageDetail1 组件 - 详情页
 @Component
-struct PageDetail10560 {
+export struct PageDetail10560 {
   private navPathStack: NavPathStack = new NavPathStack();
   @State resultText: string = '';
 
@@ -157,7 +157,7 @@ struct PageDetail10560 {
 
 // PageHome1 组件 - 主页
 @Component
-struct PageHome10560 {
+export struct PageHome10560 {
   build() {
     NavDestination() {
       Column() {
@@ -189,7 +189,7 @@ struct PageHome10560 {
 
 @Entry
 @Component
-struct MultiNavigation0560 {
+export struct MultiNavigation0560 {
   @State resultText: string = '结果显示区域';
   private navPathStack: NavPathStack = new NavPathStack();
 

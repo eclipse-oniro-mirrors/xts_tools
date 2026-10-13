@@ -18,7 +18,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 @Entry
 @Component
-struct Navigation39 {
+export struct Navigation39 {
   stack: NavPathStack = new NavPathStack();
   @State mode:NavigationMode = NavigationMode.Stack;
   @State titleMode:NavigationTitleMode = NavigationTitleMode.Free;
@@ -114,7 +114,7 @@ function createPixelMapImage(img: PixelMap | undefined, url: string) {
 }
 
 @Component
-struct Page15Component {
+export struct Page15Component {
   @State name: string = 'page15';
   @State destWidth: string = '100%';
   stack: NavPathStack = new NavPathStack();
@@ -191,7 +191,7 @@ struct Page15Component {
 }
 
 @Component
-struct Page16Component {
+export struct Page16Component {
   private stack: NavPathStack | null = null;
   @State eventStr: string = '';
 

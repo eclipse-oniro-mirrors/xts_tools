@@ -66,7 +66,7 @@ export default function uiAttributesUseEffectEffectType() {
      */
     it('SUB_ACE_UI_ATTRIBUTES_USEEFFECT_EFFECTTYPE_0010', Level.LEVEL3, async (done: Function) => {
       Logger.info('TEST', `SUB_ACE_UI_COMPONENT_TEXT_HALFLEADING_0010 start.`);
-      Settings.createWindow('testability/pages/component/common_attr/uiAttributesUseEffectEffectType/UiAttributesUseEffectEffectType01')
+      Settings.createWindow('testability/pages/component/common_attr/UiAttributesUseEffectEffectType/UiAttributesUseEffectEffectType01')
       let driver:Driver=Driver.create();
       await driver.waitForIdle(500,2000);
       windowSnap.snapShot('SUB_ACE_UI_ATTRIBUTES_USEEFFECT_EFFECTTYPE_0010_01')
@@ -88,7 +88,7 @@ export default function uiAttributesUseEffectEffectType() {
      */
     it('SUB_ACE_UI_ATTRIBUTES_USEEFFECT_EFFECTTYPE_0050', Level.LEVEL3, async (done: Function) => {
       Logger.info('TEST', `SUB_ACE_UI_ATTRIBUTES_USEEFFECT_EFFECTTYPE_0050 start.`);
-      Settings.createWindow('testability/pages/component/common_attr/uiAttributesUseEffectEffectType/UiAttributesUseEffectEffectType02')
+      Settings.createWindow('testability/pages/component/common_attr/UiAttributesUseEffectEffectType/UiAttributesUseEffectEffectType02')
       let driver:Driver=Driver.create();
       await driver.waitForIdle(500,2000);
       windowSnap.snapShot('SUB_ACE_UI_ATTRIBUTES_USEEFFECT_EFFECTTYPE_0050_01')
@@ -110,7 +110,7 @@ export default function uiAttributesUseEffectEffectType() {
      */
     it('SUB_ACE_UI_ATTRIBUTES_USEEFFECT_EFFECTTYPE_0020', Level.LEVEL3, async (done: Function) => {
       Logger.info('TEST', `SUB_ACE_UI_ATTRIBUTES_USEEFFECT_EFFECTTYPE_0020 start.`);
-      Settings.createWindow('testability/pages/component/common_attr/uiAttributesUseEffectEffectType/UiAttributesUseEffectEffectType03')
+      Settings.createWindow('testability/pages/component/common_attr/UiAttributesUseEffectEffectType/UiAttributesUseEffectEffectType03')
       let driver:Driver=Driver.create();
       await driver.waitForIdle(500,2000);
       windowSnap.snapShot('SUB_ACE_UI_ATTRIBUTES_USEEFFECT_EFFECTTYPE_0020_01')
@@ -132,7 +132,7 @@ export default function uiAttributesUseEffectEffectType() {
      */
     it('SUB_ACE_UI_ATTRIBUTES_USEEFFECT_EFFECTTYPE_0060', Level.LEVEL3, async (done: Function) => {
       Logger.info('TEST', `SUB_ACE_UI_ATTRIBUTES_USEEFFECT_EFFECTTYPE_0060 start.`);
-      Settings.createWindow('testability/pages/component/common_attr/uiAttributesUseEffectEffectType/UiAttributesUseEffectEffectType04')
+      Settings.createWindow('testability/pages/component/common_attr/UiAttributesUseEffectEffectType/UiAttributesUseEffectEffectType04')
       let driver:Driver=Driver.create();
       await driver.waitForIdle(500,2000);
       windowSnap.snapShot('SUB_ACE_UI_ATTRIBUTES_USEEFFECT_EFFECTTYPE_0060_01')

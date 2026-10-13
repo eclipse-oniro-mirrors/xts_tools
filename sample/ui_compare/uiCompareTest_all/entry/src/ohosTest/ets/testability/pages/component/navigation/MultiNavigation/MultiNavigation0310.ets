@@ -19,7 +19,7 @@ interface ParamInfo0310 {
 
 // PageHome1 组件
 @Component
-struct PageHome10310 {
+export struct PageHome10310 {
   build() {
     NavDestination() {
       Column() {
@@ -51,7 +51,7 @@ struct PageHome10310 {
 
 @Entry
 @Component
-struct MultiNavigation0310 {
+export struct MultiNavigation0310 {
   @State resultText: string = '结果显示区域';
   @State disableAnimation: boolean = false;
   @State disableAnimationText: string = 'false';

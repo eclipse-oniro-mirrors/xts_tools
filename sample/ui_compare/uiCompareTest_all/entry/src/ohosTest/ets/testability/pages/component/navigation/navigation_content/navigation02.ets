@@ -17,7 +17,7 @@ import { SymbolGlyphModifier } from '@kit.ArkUI';
 
 @Entry
 @Component
-struct Navigation02 {
+export struct Navigation02 {
   @Provide('navPathStack') navPathStack: NavPathStack = new NavPathStack();
   @State titleBar:boolean = false
   @State toolBar:boolean = false

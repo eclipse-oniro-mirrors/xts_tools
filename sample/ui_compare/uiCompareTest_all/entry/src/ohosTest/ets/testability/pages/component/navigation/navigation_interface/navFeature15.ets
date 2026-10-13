@@ -117,7 +117,7 @@ export struct NavDestinationPage15 {
 
 @Entry
 @Component
-struct NavFeature15 {
+export struct NavFeature15 {
   private pathStack: NavPathStack = new NavPathStack();
 
   build() {

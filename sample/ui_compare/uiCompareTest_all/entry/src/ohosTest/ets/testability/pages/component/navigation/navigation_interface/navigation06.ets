@@ -19,7 +19,7 @@ export function pageFourBuilder(name: string, param: Object) {
 }
 
 @Component
-struct PageFourComponent {
+export struct PageFourComponent {
   private stack: NavPathStack | null = null;
   @State eventStr: string = '';
 
@@ -88,7 +88,7 @@ struct PageFourComponent {
 
 @Entry
 @Component
-struct Navigation05 {
+export struct Navigation05 {
   private stack: NavPathStack = new NavPathStack();
   @State mode:NavigationMode = NavigationMode.Auto;
   @State titleMode:NavigationTitleMode = NavigationTitleMode.Full;

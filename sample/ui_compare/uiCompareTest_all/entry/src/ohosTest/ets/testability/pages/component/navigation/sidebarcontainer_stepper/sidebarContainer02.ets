@@ -32,7 +32,7 @@ function itemTextStyle1() {
 
 @Entry
 @Component
-struct SidebarContainer02 {
+export struct SidebarContainer02 {
   @State currentIndex: number = 0;
   @State firstState: ItemState = ItemState.Normal;
   @State secondState: ItemState = ItemState.Normal;

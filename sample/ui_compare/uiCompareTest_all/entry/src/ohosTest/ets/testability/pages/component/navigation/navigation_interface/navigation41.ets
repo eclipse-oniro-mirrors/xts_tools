@@ -15,7 +15,7 @@
 
 @Entry
 @Component
-struct Navigation41 {
+export struct Navigation41 {
   private arr: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
   @State currentIndex: number = 0;
   @State mode:NavigationMode = NavigationMode.Stack;

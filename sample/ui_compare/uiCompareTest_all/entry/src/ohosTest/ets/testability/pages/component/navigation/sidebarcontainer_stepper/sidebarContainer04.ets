@@ -31,7 +31,7 @@
 
 @Entry
 @Component
-struct SideBarContainer04 {
+export struct SideBarContainer04 {
   @State currentIndex: number = 0;
   @State firstState: ItemState = ItemState.Normal;
   @State secondState: ItemState = ItemState.Normal;

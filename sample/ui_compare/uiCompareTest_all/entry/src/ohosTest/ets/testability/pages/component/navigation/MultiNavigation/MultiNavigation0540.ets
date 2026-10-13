@@ -19,7 +19,7 @@ interface ParamInfo0540 {
 
 // PageHome1 组件 - 左侧主页
 @Component
-struct PageHome10540 {
+export struct PageHome10540 {
   build() {
     Column() {
       Text('PageHome1 页面')
@@ -41,7 +41,7 @@ struct PageHome10540 {
 
 // PageDetail1 组件
 @Component
-struct PageDetail10540 {
+export struct PageDetail10540 {
   build() {
     NavDestination() {
       Column() {
@@ -73,7 +73,7 @@ struct PageDetail10540 {
 
 @Entry
 @Component
-struct MultiNavigation0540 {
+export struct MultiNavigation0540 {
   @State resultText: string = '结果显示区域';
   private navPathStack: NavPathStack = new NavPathStack();
 

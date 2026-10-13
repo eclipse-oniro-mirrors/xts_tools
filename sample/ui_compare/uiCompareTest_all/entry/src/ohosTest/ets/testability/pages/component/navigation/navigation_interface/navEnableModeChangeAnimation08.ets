@@ -21,7 +21,7 @@ class NavigationModifier implements AttributeModifier<NavigationAttribute> {
 
 @Entry
 @Component
-struct NavEnableModeChangeAnimation08 {
+export struct NavEnableModeChangeAnimation08 {
   @State showModifierScene: boolean = false;
   @State navigationMode: NavigationMode = NavigationMode.Stack;
   private modifier: NavigationModifier = new NavigationModifier();

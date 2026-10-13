@@ -15,7 +15,7 @@
 
 @Entry
 @Component
-struct Navigation42 {
+export struct Navigation42 {
   pageInfos: NavPathStack = new NavPathStack();
   isUseInterception: boolean = false;
 

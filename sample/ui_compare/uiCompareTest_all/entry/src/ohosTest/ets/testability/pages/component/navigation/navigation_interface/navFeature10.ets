@@ -18,7 +18,7 @@ import { EmptyTextModifier } from './navFeatureUtils';
 
 @Entry
 @Component
-struct NavFeature10 {
+export struct NavFeature10 {
   @State mainTitleModifier: TextModifier | null = null;
   @State subTitleModifier: TextModifier | null = null;
 

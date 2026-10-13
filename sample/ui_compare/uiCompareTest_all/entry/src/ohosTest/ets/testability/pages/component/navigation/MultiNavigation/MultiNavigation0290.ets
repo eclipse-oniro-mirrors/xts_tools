@@ -19,7 +19,7 @@ interface ParamInfo0290 {
 
 // PageHome1 组件
 @Component
-struct PageHome10290 {
+export struct PageHome10290 {
   @Prop index: number = 0;
 
   build() {
@@ -58,7 +58,7 @@ struct PageHome10290 {
 
 @Entry
 @Component
-struct MultiNavigation0290 {
+export struct MultiNavigation0290 {
   @State resultText: string = '结果显示区域';
   @State pushCount: number = 0;
   private navPathStack: NavPathStack = new NavPathStack();

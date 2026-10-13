@@ -15,7 +15,7 @@
 
 @Entry
 @Component
-struct ComponentNavNavigation015 {
+export struct ComponentNavNavigation015 {
   @State titlemode:NavigationTitleMode = NavigationTitleMode.Full
   @State title:NavigationCommonTitle = { main: '主标题短文本', sub: '副标题短文本' }
   @State back:Optional<boolean> = true
