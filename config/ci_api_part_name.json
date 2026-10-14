@@ -2524,6 +2524,20 @@
             "build_targets": {}
         },
         {
+            "path": "interface/sdk-js/api/@ohos.data.dataFabricAddress.d.ts",
+            "bundle_name": [
+                "preferences"
+            ],
+            "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/zh-cn/api/@ohos.data.dataFabricAddress.d.ts",
+            "bundle_name": [
+                "preferences"
+            ],
+            "build_targets": {}
+        },
+        {
             "path": "interface/sdk-js/api/@ohos.hiSysEvent.d.ts",
             "bundle_name": [
                 "hisysevent"
