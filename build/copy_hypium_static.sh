@@ -13,13 +13,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 set -e
+set +e
 echo exec $@
 
 code_root=$(realpath $(dirname $(readlink -f "$0"))/../../../../)
 
+cfg_str=$(grep "@ohos/hypium-static" $1/oh-package.json5)
+
+if [ "${cfg_str}" == "" ]; then
 mkdir -p "$1/entry/src/hypium"
 cp -rf "${code_root}/test/testfwk/arkxtest/jsunit/src_static/module" "$1/entry/src/hypium/"
 cp -f "${code_root}/test/testfwk/arkxtest/jsunit/src_static/"*.ets "$1/entry/src/hypium/"
+fi
 
 mkdir -p "$2"
 touch "$2/$3.stamp"
