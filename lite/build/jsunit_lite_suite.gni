@@ -122,6 +122,8 @@ template("jsunit_lite_suite") {
       rebase_path("$root_out_dir/dev_tools/bin/aa"),
       "--tools-out",
       rebase_path(_tools_dir),
+      "--kernel-type",
+      "${ohos_kernel_type}",
     ]
   }
 
