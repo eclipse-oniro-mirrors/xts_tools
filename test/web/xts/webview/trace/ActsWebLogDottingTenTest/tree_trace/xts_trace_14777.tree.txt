@@ -1,0 +1,9 @@
+Trace:  xts_trace_14777.txt
+Binary: /system/bin/sa_main
+PID:    14777
+Entries: 761
+============================================================
+
+й╕йд libapp_fwk_update_service.z.so!OHOS::NWeb::AppFwkUpdateService::OnStart(OHOS::SystemAbilityOnDemandReason const&)  [/home/yanghaidong/ophar/out/rk3568/../../base/web/webview/sa/app_fwk_update/src/app_fwk_update_service.cpp:213]
+   й╕йд libapp_fwk_update_service.z.so!OHOS::NWeb::AppFwkUpdateService::Init(OHOS::SystemAbilityOnDemandReason const&)  [/home/yanghaidong/ophar/out/rk3568/../../base/web/webview/sa/app_fwk_update/src/app_fwk_update_service.cpp:224]
+      й╕йд libapp_fwk_update_service.z.so!OHOS::NWeb::AppFwkUpdateService::PostDelayUnloadTask()  [/home/yanghaidong/ophar/out/rk3568/../../base/web/webview/sa/app_fwk_update/src/app_fwk_update_service.cpp:387]
