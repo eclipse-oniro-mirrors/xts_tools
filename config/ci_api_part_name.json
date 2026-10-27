@@ -2384,6 +2384,20 @@
             "build_targets": {}
         },
         {
+            "path": "interface/sdk-js/api/@ohos.hiviewdfx.jsLeakWatcherNative.d.ts",
+            "bundle_name": [
+                "hichecker"
+            ],
+            "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/zh-cn/api/@ohos.hiviewdfx.jsLeakWatcherNative.d.ts",
+            "bundle_name": [
+                "hichecker"
+            ],
+            "build_targets": {}
+        },
+        {
             "path": "interface/sdk-js/api/@ohos.app.ability.application.d.ts",
             "bundle_name": [
                 "ability_runtime"
