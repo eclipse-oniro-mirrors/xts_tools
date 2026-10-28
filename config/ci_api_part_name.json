@@ -16468,6 +16468,34 @@
             "build_targets": {}
         },
         {
+            "path": "interface/sdk-js/api/application/FocusedApplicationObserver.d.ts",
+            "bundle_name": [
+                "ability_runtime"
+            ],
+            "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/api/application/FocusedApplicationInfo.d.ts",
+            "bundle_name": [
+                "ability_runtime"
+            ],
+            "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/zh-cn/api/application/FocusedApplicationObserver.d.ts",
+            "bundle_name": [
+                "ability_runtime"
+            ],
+            "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/zh-cn/api/application/FocusedApplicationInfo.d.ts",
+            "bundle_name": [
+                "ability_runtime"
+            ],
+            "build_targets": {}
+        },
+        {
             "path": "interface/sdk-js/api/application/UIServiceHostProxy.d.ts",
             "bundle_name": [
                 "ability_runtime"
