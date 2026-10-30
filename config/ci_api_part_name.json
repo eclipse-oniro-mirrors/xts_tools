@@ -7732,6 +7732,20 @@
             "build_targets": {}
         },
         {
+            "path": "interface/sdk-js/api/@ohos.userIAM.pinAuth.d.ts",
+            "bundle_name": [
+                "pin_auth"
+            ],
+            "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/zh-cn/api/@ohos.userIAM.pinAuth.d.ts",
+            "bundle_name": [
+                "pin_auth"
+            ],
+            "build_targets": {}
+        },
+        {
             "path": "interface/sdk-js/api/@ohos.arkui.advanced.SwipeRefresher.d.ets",
             "bundle_name": [
                 "ace_engine"
