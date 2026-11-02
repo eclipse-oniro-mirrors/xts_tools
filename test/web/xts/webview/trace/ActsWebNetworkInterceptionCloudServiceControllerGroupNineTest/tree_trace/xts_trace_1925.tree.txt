@@ -1754,7 +1754,7 @@ Entries: 8422
          ©¦  ©¦  ©¸©¤ libweb_configs.z.so!OHOS::NWeb::NWebConfigHelper::GetWebPlayGroundInitArg()  [/home/yanghaidong/ophar/out/rk3568/../../base/web/webview/ohos_nweb/src/nweb_config_helper.cpp:234]
          ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineWrapper::LibraryLoaded(std::__h::shared_ptr<OHOS::NWeb::NWebEngineInitArgs>, bool)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_wrapper.cpp:404]
          ©¦     ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsImpl::ArkWebEngineInitArgsImpl(std::__h::shared_ptr<OHOS::NWeb::NWebEngineInitArgs>)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_init_args_impl.cpp:25]
-         ©¦     ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26] (¡Á2)
+         ©¦     ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const (¡Á2)
          ©¦     ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineCToCpp::LibraryLoaded(ark_web_scoped_refptr<OHOS::ArkWeb::ArkWebEngineInitArgs>, bool)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/ctocpp/ark_web_engine_ctocpp.cpp:1665]
          ©¦     ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCToCppRefCounted<OHOS::ArkWeb::ArkWebEngineCToCpp, OHOS::ArkWeb::ArkWebEngine, _ark_web_engine_t>::GetStruct() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/ctocpp/ark_web_ctocpp_ref_counted.h:111]
          ©¦     ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
@@ -1765,26 +1765,26 @@ Entries: 8422
          ©¦     ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringStructRelease(ArkWebString&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:83]
          ©¦     ©¦  ©¦     ©¸©¤ libarkweb_glue_base.z.so!ArkWebMemFree(void*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_memory.cpp:21]
          ©¦     ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
-         ©¦     ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+         ©¦     ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
          ©¦     ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsCppToC::ArkWebEngineInitArgsCppToC()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:143]
          ©¦     ©¦  ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebNWebWebviewBridgeHelper::GetInstance()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_webview_bridge_helper.cpp:55]
          ©¦     ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!OHOS::ArkWeb::ArkWebBridgeHelper::RegisterFuncMember(ArkWebBridgeType, std::__h::map<std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>>, void*, std::__h::less<std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>>>, std::__h::allocator<std::__h::pair<std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const, void*>>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/bridge/ark_web_bridge_helper.cpp:133]
          ©¦     ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:166]
-         ©¦     ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+         ©¦     ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
          ©¦     ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructIncreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:193]
          ©¦     ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:166]
-         ©¦     ©¦  ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+         ©¦     ©¦  ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
          ©¦     ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructDecreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:208]
          ©¦     ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:177]
-         ©¦     ©¦  ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+         ©¦     ©¦  ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
          ©¦     ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructIncreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:193] (¡Á2)
          ©¦     ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:166] (¡Á2)
-         ©¦     ©¦  ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26] (¡Á2)
+         ©¦     ©¦  ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const (¡Á2)
          ©¦     ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructDecreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:208] (¡Á2)
          ©¦     ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:177] (¡Á2)
-         ©¦     ©¦  ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26] (¡Á2)
-         ©¦     ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
-         ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26] (¡Á2)
+         ©¦     ©¦  ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const (¡Á2)
+         ©¦     ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
+         ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const (¡Á2)
          ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineWrapper::SetWebTag(int, char const*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_wrapper.cpp:119]
             ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineCToCpp::SetWebTag(int, char const*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/ctocpp/ark_web_engine_ctocpp.cpp:411]
                ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCToCppRefCounted<OHOS::ArkWeb::ArkWebEngineCToCpp, OHOS::ArkWeb::ArkWebEngine, _ark_web_engine_t>::GetStruct() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/ctocpp/ark_web_ctocpp_ref_counted.h:111]
@@ -1807,7 +1807,7 @@ Entries: 8422
 ©¸©¤ libarkweb_core_loader.z.so!OHOS::NWeb::NWebHelper::Init(bool)  [/home/yanghaidong/ophar/out/rk3568/../../base/web/webview/ohos_nweb/src/nweb_helper.cpp:669]
    ©¸©¤ libarkweb_core_loader.z.so!OHOS::NWeb::NWebHelper::GetWebEngine(bool)  [/home/yanghaidong/ophar/out/rk3568/../../base/web/webview/ohos_nweb/src/nweb_helper.cpp:713]
 ©¸©¤ libarkweb_utils.z.so!OHOS::ArkWeb::getActiveWebEngineVersion() (¡Á2)
-©¸©¤ 0x9fa4ed85
+©¸©¤ 2678386053
    ©À©¤ 0x9fa4e409
    ©¸©¤ 0x9fa2017d
       ©À©¤ libarkweb_core_loader.z.so!OHOS::NWeb::NWebHelper::Instance()
@@ -1836,7 +1836,7 @@ Entries: 8422
    ©¸©¤ libarkweb_core_loader.z.so!OHOS::NWeb::NWebHelper::CreateNWeb(std::__h::shared_ptr<OHOS::NWeb::NWebCreateInfo>)  [/home/yanghaidong/ophar/out/rk3568/../../base/web/webview/ohos_nweb/src/nweb_helper.cpp:938]
       ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineWrapper::CreateNWeb(std::__h::shared_ptr<OHOS::NWeb::NWebCreateInfo>)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_wrapper.cpp:54]
          ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebNWebCreateInfoImpl::ArkWebNWebCreateInfoImpl(std::__h::shared_ptr<OHOS::NWeb::NWebCreateInfo>)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_create_info_impl.cpp:27]
-         ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26] (¡Á2)
+         ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const (¡Á2)
          ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineCToCpp::CreateNWeb(ark_web_scoped_refptr<OHOS::ArkWeb::ArkWebNWebCreateInfo>)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/ctocpp/ark_web_engine_ctocpp.cpp:217]
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCToCppRefCounted<OHOS::ArkWeb::ArkWebEngineCToCpp, OHOS::ArkWeb::ArkWebEngine, _ark_web_engine_t>::GetStruct() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/ctocpp/ark_web_ctocpp_ref_counted.h:111]
             ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
@@ -1847,24 +1847,24 @@ Entries: 8422
             ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringStructRelease(ArkWebString&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:83]
             ©¦     ©¸©¤ libarkweb_glue_base.z.so!ArkWebMemFree(void*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_memory.cpp:21]
             ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
-            ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebNWebCreateInfoCppToC::ArkWebNWebCreateInfoCppToC()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_nweb_create_info_cpptoc.cpp:106]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebNWebWebviewBridgeHelper::GetInstance()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_webview_bridge_helper.cpp:55]
             ©¦  ©¸©¤ libarkweb_glue_base.z.so!OHOS::ArkWeb::ArkWebBridgeHelper::RegisterFuncMember(ArkWebBridgeType, std::__h::map<std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>>, void*, std::__h::less<std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>>>, std::__h::allocator<std::__h::pair<std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const, void*>>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/bridge/ark_web_bridge_helper.cpp:133]
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:166]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebNWebCreateInfoCppToC, OHOS::ArkWeb::ArkWebNWebCreateInfo, _ark_web_nweb_create_info_t>::StructIncreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:193]
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:166]
-            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebNWebCreateInfoCppToC, OHOS::ArkWeb::ArkWebNWebCreateInfo, _ark_web_nweb_create_info_t>::StructDecreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:208]
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:177]
-            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebNWebCreateInfoCppToC, OHOS::ArkWeb::ArkWebNWebCreateInfo, _ark_web_nweb_create_info_t>::StructIncreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:193] (¡Á2)
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:166] (¡Á2)
-            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26] (¡Á2)
+            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const (¡Á2)
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebNWebCreateInfoCppToC, OHOS::ArkWeb::ArkWebNWebCreateInfo, _ark_web_nweb_create_info_t>::StructDecreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:208]
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:177]
-            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ 0x950efd11
             ©¦  ©À©¤ 0x9509f629
             ©¦  ©¦  ©À©¤ 0x9fcf6fed
@@ -2120,13 +2120,13 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d
             ©¦  ©¸©¤ 0x950b0c39
             ©¦     ©¸©¤ 0x950830b9
-            ©À©¤ 0x95110d81 (¡Á2)
+            ©À©¤ 2500922753 (¡Á2)
             ©¦  ©¸©¤ 0x950b0bf1 (¡Á2)
             ©¦     ©¸©¤ 0x95083081 (¡Á2)
             ©À©¤ 0x95110e8d (¡Á2)
@@ -2149,41 +2149,41 @@ Entries: 8422
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_nweb_create_info_get_engine_init_args(_ark_web_nweb_create_info_t*) (.llvm.1491401356720055696)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_nweb_create_info_cpptoc.cpp:71]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebNWebCreateInfoCppToC, OHOS::ArkWeb::ArkWebNWebCreateInfo, _ark_web_nweb_create_info_t>::Get(_ark_web_nweb_create_info_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebNWebCreateInfoImpl::GetEngineInitArgs()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_create_info_impl.cpp:55]
             ©¦  ©¦  ©À©¤ libarkweb_core_loader.z.so!OHOS::NWeb::NWebCreateInfoImpl::GetEngineInitArgs()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_nweb/include/nweb_init_params.h:114]
             ©¦  ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsImpl::ArkWebEngineInitArgsImpl(std::__h::shared_ptr<OHOS::NWeb::NWebEngineInitArgs>)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_init_args_impl.cpp:25]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
-            ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
-            ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
+            ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
+            ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsCppToC::ArkWebEngineInitArgsCppToC()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:143]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:166]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26] (¡Á2)
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const (¡Á2)
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructIncreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:193]
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:166]
-            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructDecreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:208]
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:177]
-            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructIncreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:193] (¡Á2)
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:166] (¡Á2)
-            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26] (¡Á2)
+            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const (¡Á2)
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructDecreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:208] (¡Á2)
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:177] (¡Á2)
-            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26] (¡Á2)
+            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const (¡Á2)
             ©À©¤ libarkweb_core_loader_glue.z.so!ark_web_nweb_webview_check_func_static  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_webview_bridge_helper.cpp:68]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebStringStructToClass(ArkWebString const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:71]
             ©¦  ©¸©¤ libarkweb_glue_base.z.so!OHOS::ArkWeb::ArkWebBridgeHelper::CheckFuncMemberForCalled(ArkWebBridgeType, std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/bridge/ark_web_bridge_helper.cpp:146]
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_engine_init_args_get_is_enhance_surface(_ark_web_engine_init_args_t*) (.llvm.4476414489740328405)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:69]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::Get(_ark_web_engine_init_args_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsImpl::GetIsEnhanceSurface()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_init_args_impl.cpp:53]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructDecreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:208]
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:177]
-            ©¦     ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦     ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©¦     ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsImpl::~ArkWebEngineInitArgsImpl()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_init_args_impl.h:30]
             ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsCppToC::~ArkWebEngineInitArgsCppToC()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:178]
             ©¦        ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsCppToC::~ArkWebEngineInitArgsCppToC()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:178]
@@ -2193,22 +2193,22 @@ Entries: 8422
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_nweb_create_info_get_width(_ark_web_nweb_create_info_t*) (.llvm.1491401356720055696)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_nweb_create_info_cpptoc.cpp:26]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebNWebCreateInfoCppToC, OHOS::ArkWeb::ArkWebNWebCreateInfo, _ark_web_nweb_create_info_t>::Get(_ark_web_nweb_create_info_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebNWebCreateInfoImpl::GetWidth()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_create_info_impl.cpp:30]
             ©¦  ©¦  ©¸©¤ libarkweb_core_loader.z.so!OHOS::NWeb::NWebCreateInfoImpl::GetWidth()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_nweb/include/nweb_init_params.h:64]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!ark_web_nweb_webview_check_func_static  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_webview_bridge_helper.cpp:68]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebStringStructToClass(ArkWebString const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:71]
             ©¦  ©¸©¤ libarkweb_glue_base.z.so!OHOS::ArkWeb::ArkWebBridgeHelper::CheckFuncMemberForCalled(ArkWebBridgeType, std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/bridge/ark_web_bridge_helper.cpp:146]
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_nweb_create_info_get_height(_ark_web_nweb_create_info_t*) (.llvm.1491401356720055696)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_nweb_create_info_cpptoc.cpp:35]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebNWebCreateInfoCppToC, OHOS::ArkWeb::ArkWebNWebCreateInfo, _ark_web_nweb_create_info_t>::Get(_ark_web_nweb_create_info_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebNWebCreateInfoImpl::GetHeight()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_create_info_impl.cpp:35]
             ©¦  ©¦  ©¸©¤ libarkweb_core_loader.z.so!OHOS::NWeb::NWebCreateInfoImpl::GetHeight()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_nweb/include/nweb_init_params.h:74]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ 0x951058f5
-            ©¦  ©¸©¤ 0x950aa521
+            ©¦  ©¸©¤ 2500502817
             ©¦     ©¸©¤ 0x9fcf70b1
             ©¦        ©¸©¤ 0x9fcbd799
             ©¦           ©¸©¤ 0x9fc374cd
@@ -2225,7 +2225,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -2257,7 +2257,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -2279,27 +2279,27 @@ Entries: 8422
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_nweb_create_info_get_width(_ark_web_nweb_create_info_t*) (.llvm.1491401356720055696)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_nweb_create_info_cpptoc.cpp:26]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebNWebCreateInfoCppToC, OHOS::ArkWeb::ArkWebNWebCreateInfo, _ark_web_nweb_create_info_t>::Get(_ark_web_nweb_create_info_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebNWebCreateInfoImpl::GetWidth()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_create_info_impl.cpp:30]
             ©¦  ©¦  ©¸©¤ libarkweb_core_loader.z.so!OHOS::NWeb::NWebCreateInfoImpl::GetWidth()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_nweb/include/nweb_init_params.h:64]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_nweb_create_info_get_height(_ark_web_nweb_create_info_t*) (.llvm.1491401356720055696)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_nweb_create_info_cpptoc.cpp:35]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebNWebCreateInfoCppToC, OHOS::ArkWeb::ArkWebNWebCreateInfo, _ark_web_nweb_create_info_t>::Get(_ark_web_nweb_create_info_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebNWebCreateInfoImpl::GetHeight()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_create_info_impl.cpp:35]
             ©¦  ©¦  ©¸©¤ libarkweb_core_loader.z.so!OHOS::NWeb::NWebCreateInfoImpl::GetHeight()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_nweb/include/nweb_init_params.h:74]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!ark_web_nweb_webview_check_func_static  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_webview_bridge_helper.cpp:68]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebStringStructToClass(ArkWebString const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:71]
             ©¦  ©¸©¤ libarkweb_glue_base.z.so!OHOS::ArkWeb::ArkWebBridgeHelper::CheckFuncMemberForCalled(ArkWebBridgeType, std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/bridge/ark_web_bridge_helper.cpp:146]
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_nweb_create_info_get_is_incognito_mode(_ark_web_nweb_create_info_t*) (.llvm.1491401356720055696)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_nweb_create_info_cpptoc.cpp:44]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebNWebCreateInfoCppToC, OHOS::ArkWeb::ArkWebNWebCreateInfo, _ark_web_nweb_create_info_t>::Get(_ark_web_nweb_create_info_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebNWebCreateInfoImpl::GetIsIncognitoMode()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_create_info_impl.cpp:40]
             ©¦  ©¦  ©¸©¤ libarkweb_core_loader.z.so!OHOS::NWeb::NWebCreateInfoImpl::GetIsIncognitoMode()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_nweb/include/nweb_init_params.h:84]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ 0x950eb735
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ 0x950efdad
@@ -2312,7 +2312,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -2342,7 +2342,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -2372,7 +2372,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -2411,7 +2411,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -2443,7 +2443,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -2475,7 +2475,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -2508,7 +2508,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -2542,7 +2542,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -2574,7 +2574,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -2608,7 +2608,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -2642,7 +2642,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -2671,7 +2671,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -2693,48 +2693,48 @@ Entries: 8422
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_nweb_create_info_get_engine_init_args(_ark_web_nweb_create_info_t*) (.llvm.1491401356720055696)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_nweb_create_info_cpptoc.cpp:71]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebNWebCreateInfoCppToC, OHOS::ArkWeb::ArkWebNWebCreateInfo, _ark_web_nweb_create_info_t>::Get(_ark_web_nweb_create_info_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebNWebCreateInfoImpl::GetEngineInitArgs()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_create_info_impl.cpp:55]
             ©¦  ©¦  ©À©¤ libarkweb_core_loader.z.so!OHOS::NWeb::NWebCreateInfoImpl::GetEngineInitArgs()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_nweb/include/nweb_init_params.h:114]
             ©¦  ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsImpl::ArkWebEngineInitArgsImpl(std::__h::shared_ptr<OHOS::NWeb::NWebEngineInitArgs>)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_init_args_impl.cpp:25]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
-            ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
-            ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
+            ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
+            ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsCppToC::ArkWebEngineInitArgsCppToC()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:143]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:166]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26] (¡Á2)
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const (¡Á2)
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructIncreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:193]
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:166]
-            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructDecreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:208]
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:177]
-            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructIncreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:193] (¡Á2)
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:166] (¡Á2)
-            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26] (¡Á2)
+            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const (¡Á2)
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructDecreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:208] (¡Á2)
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:177] (¡Á2)
-            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26] (¡Á2)
+            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const (¡Á2)
             ©À©¤ libarkweb_core_loader_glue.z.so!ark_web_nweb_webview_check_func_static  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_webview_bridge_helper.cpp:68]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebStringStructToClass(ArkWebString const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:71]
             ©¦  ©¸©¤ libarkweb_glue_base.z.so!OHOS::ArkWeb::ArkWebBridgeHelper::CheckFuncMemberForCalled(ArkWebBridgeType, std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/bridge/ark_web_bridge_helper.cpp:146]
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_engine_init_args_get_dump_path(_ark_web_engine_init_args_t*) (.llvm.4476414489740328405)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:33]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::Get(_ark_web_engine_init_args_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsImpl::GetDumpPath()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_init_args_impl.cpp:33]
             ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringClassToStruct(std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:52]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!ark_web_nweb_webview_check_func_static  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_webview_bridge_helper.cpp:68]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebStringStructToClass(ArkWebString const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:71]
             ©¦  ©¸©¤ libarkweb_glue_base.z.so!OHOS::ArkWeb::ArkWebBridgeHelper::CheckFuncMemberForCalled(ArkWebBridgeType, std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/bridge/ark_web_bridge_helper.cpp:146]
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_engine_init_args_get_is_frame_info_dump(_ark_web_engine_init_args_t*) (.llvm.4476414489740328405)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:60]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::Get(_ark_web_engine_init_args_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsImpl::GetIsFrameInfoDump()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_init_args_impl.cpp:48]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ 0x950eb735
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ 0x950efdad
@@ -2747,7 +2747,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -2772,30 +2772,30 @@ Entries: 8422
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_engine_init_args_get_is_enhance_surface(_ark_web_engine_init_args_t*) (.llvm.4476414489740328405)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:69]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::Get(_ark_web_engine_init_args_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsImpl::GetIsEnhanceSurface()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_init_args_impl.cpp:53]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!ark_web_nweb_webview_check_func_static  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_webview_bridge_helper.cpp:68]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebStringStructToClass(ArkWebString const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:71]
             ©¦  ©¸©¤ libarkweb_glue_base.z.so!OHOS::ArkWeb::ArkWebBridgeHelper::CheckFuncMemberForCalled(ArkWebBridgeType, std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/bridge/ark_web_bridge_helper.cpp:146]
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_engine_init_args_get_args_to_delete(_ark_web_engine_init_args_t*) (.llvm.4476414489740328405)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:51]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::Get(_ark_web_engine_init_args_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsImpl::GetArgsToDelete()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_init_args_impl.cpp:43]
             ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringListClassToStruct(std::__h::list<std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>>, std::__h::allocator<std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>>>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:142]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!ark_web_nweb_webview_check_func_static  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_webview_bridge_helper.cpp:68]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebStringStructToClass(ArkWebString const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:71]
             ©¦  ©¸©¤ libarkweb_glue_base.z.so!OHOS::ArkWeb::ArkWebBridgeHelper::CheckFuncMemberForCalled(ArkWebBridgeType, std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/bridge/ark_web_bridge_helper.cpp:146]
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_engine_init_args_get_args_to_add(_ark_web_engine_init_args_t*) (.llvm.4476414489740328405)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:42]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::Get(_ark_web_engine_init_args_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsImpl::GetArgsToAdd()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_init_args_impl.cpp:38]
             ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringListClassToStruct(std::__h::list<std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>>, std::__h::allocator<std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>>>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:142]
             ©¦  ©¦     ©¸©¤ libarkweb_glue_base.z.so!ArkWebMemMalloc(int)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_memory.cpp:30] (¡Á11)
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ libarkweb_glue_base.z.so!ArkWebMemFree(void*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_memory.cpp:21] (¡Á11)
             ©À©¤ 0x950afbd9
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebStringStructToClass(ArkWebString const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:71]
@@ -2901,7 +2901,7 @@ Entries: 8422
             ©¦  ©¦  ©¦  ©¦        ©À©¤ 0x9fc67ef9
             ©¦  ©¦  ©¦  ©¦        ©À©¤ 0x9fc67f9d
             ©¦  ©¦  ©¦  ©¦        ©¦  ©¸©¤ 0x9fc67e31
-            ©¦  ©¦  ©¦  ©¦        ©À©¤ 0x9fc2baa1
+            ©¦  ©¦  ©¦  ©¦        ©À©¤ 2680339105
             ©¦  ©¦  ©¦  ©¦        ©À©¤ 0x9fc2b4cd
             ©¦  ©¦  ©¦  ©¦        ©¸©¤ 0x9fcf6e51
             ©¦  ©¦  ©¦  ©¦           ©À©¤ 0x9fcf6b69
@@ -2910,7 +2910,7 @@ Entries: 8422
             ©¦  ©¦  ©¦  ©¦           ©À©¤ 0x9fc67ef9
             ©¦  ©¦  ©¦  ©¦           ©À©¤ 0x9fc67f9d
             ©¦  ©¦  ©¦  ©¦           ©¦  ©¸©¤ 0x9fc67e31
-            ©¦  ©¦  ©¦  ©¦           ©À©¤ 0x9fc2baa1
+            ©¦  ©¦  ©¦  ©¦           ©À©¤ 2680339105
             ©¦  ©¦  ©¦  ©¦           ©À©¤ 0x9fc2b4cd
             ©¦  ©¦  ©¦  ©¦           ©¸©¤ 0x9fcf6e55
             ©¦  ©¦  ©¦  ©¦              ©À©¤ 0x9fcf6b69
@@ -2919,7 +2919,7 @@ Entries: 8422
             ©¦  ©¦  ©¦  ©¦              ©À©¤ 0x9fc67ef9
             ©¦  ©¦  ©¦  ©¦              ©À©¤ 0x9fc67f9d
             ©¦  ©¦  ©¦  ©¦              ©¦  ©¸©¤ 0x9fc67e31
-            ©¦  ©¦  ©¦  ©¦              ©À©¤ 0x9fc2baa1
+            ©¦  ©¦  ©¦  ©¦              ©À©¤ 2680339105
             ©¦  ©¦  ©¦  ©¦              ©À©¤ 0x9fc2b4cd
             ©¦  ©¦  ©¦  ©¦              ©¸©¤ 0x9fcf6e59
             ©¦  ©¦  ©¦  ©¦                 ©À©¤ 0x9fcf6b69
@@ -2928,7 +2928,7 @@ Entries: 8422
             ©¦  ©¦  ©¦  ©¦                 ©À©¤ 0x9fc67ef9
             ©¦  ©¦  ©¦  ©¦                 ©À©¤ 0x9fc67f9d
             ©¦  ©¦  ©¦  ©¦                 ©¦  ©¸©¤ 0x9fc67e31
-            ©¦  ©¦  ©¦  ©¦                 ©À©¤ 0x9fc2baa1
+            ©¦  ©¦  ©¦  ©¦                 ©À©¤ 2680339105
             ©¦  ©¦  ©¦  ©¦                 ©À©¤ 0x9fc2b4cd
             ©¦  ©¦  ©¦  ©¦                 ©¸©¤ 0x9fcf6bcd
             ©¦  ©¦  ©¦  ©¦                    ©À©¤ 0x9fcf6b69
@@ -2937,7 +2937,7 @@ Entries: 8422
             ©¦  ©¦  ©¦  ©¦                    ©À©¤ 0x9fc67ef9
             ©¦  ©¦  ©¦  ©¦                    ©À©¤ 0x9fc67f9d
             ©¦  ©¦  ©¦  ©¦                    ©¦  ©¸©¤ 0x9fc67e31
-            ©¦  ©¦  ©¦  ©¦                    ©À©¤ 0x9fc2baa1
+            ©¦  ©¦  ©¦  ©¦                    ©À©¤ 2680339105
             ©¦  ©¦  ©¦  ©¦                    ©¸©¤ 0x9fcf6bd1
             ©¦  ©¦  ©¦  ©¦                       ©À©¤ 0x9fcf6b69
             ©¦  ©¦  ©¦  ©¦                       ©À©¤ 0x9fcf6b6d
@@ -2945,7 +2945,7 @@ Entries: 8422
             ©¦  ©¦  ©¦  ©¦                       ©À©¤ 0x9fc67ef9
             ©¦  ©¦  ©¦  ©¦                       ©À©¤ 0x9fc67f9d
             ©¦  ©¦  ©¦  ©¦                       ©¦  ©¸©¤ 0x9fc67e31
-            ©¦  ©¦  ©¦  ©¦                       ©À©¤ 0x9fc2baa1
+            ©¦  ©¦  ©¦  ©¦                       ©À©¤ 2680339105
             ©¦  ©¦  ©¦  ©¦                       ©¸©¤ 0x9fcf6bd5
             ©¦  ©¦  ©¦  ©¦                          ©À©¤ 0x9fcf6b69
             ©¦  ©¦  ©¦  ©¦                          ©À©¤ 0x9fcf6b6d
@@ -2953,7 +2953,7 @@ Entries: 8422
             ©¦  ©¦  ©¦  ©¦                          ©À©¤ 0x9fc67ef9
             ©¦  ©¦  ©¦  ©¦                          ©À©¤ 0x9fc67f9d
             ©¦  ©¦  ©¦  ©¦                          ©¦  ©¸©¤ 0x9fc67e31
-            ©¦  ©¦  ©¦  ©¦                          ©À©¤ 0x9fc2baa1
+            ©¦  ©¦  ©¦  ©¦                          ©À©¤ 2680339105
             ©¦  ©¦  ©¦  ©¦                          ©¸©¤ 0x9fcf6bd9
             ©¦  ©¦  ©¦  ©¦                             ©À©¤ 0x9fcf6b69
             ©¦  ©¦  ©¦  ©¦                             ©À©¤ 0x9fcf6b6d
@@ -2961,7 +2961,7 @@ Entries: 8422
             ©¦  ©¦  ©¦  ©¦                             ©À©¤ 0x9fc67ef9
             ©¦  ©¦  ©¦  ©¦                             ©À©¤ 0x9fc67f9d
             ©¦  ©¦  ©¦  ©¦                             ©¦  ©¸©¤ 0x9fc67e31
-            ©¦  ©¦  ©¦  ©¦                             ©À©¤ 0x9fc2baa1
+            ©¦  ©¦  ©¦  ©¦                             ©À©¤ 2680339105
             ©¦  ©¦  ©¦  ©¦                             ©¸©¤ 0x9fcf6bdd
             ©¦  ©¦  ©¦  ©¦                                ©À©¤ 0x9fcf6b69
             ©¦  ©¦  ©¦  ©¦                                ©À©¤ 0x9fcf6b6d
@@ -2969,7 +2969,7 @@ Entries: 8422
             ©¦  ©¦  ©¦  ©¦                                ©À©¤ 0x9fc67ef9
             ©¦  ©¦  ©¦  ©¦                                ©À©¤ 0x9fc67f9d
             ©¦  ©¦  ©¦  ©¦                                ©¦  ©¸©¤ 0x9fc67e31
-            ©¦  ©¦  ©¦  ©¦                                ©¸©¤ 0x9fc2baa1
+            ©¦  ©¦  ©¦  ©¦                                ©¸©¤ 2680339105
             ©¦  ©¦  ©¦  ©¸©¤ 0x9fc88ba1
             ©¦  ©¦  ©¸©¤ 0x95093231 (¡Á2)
             ©¦  ©¸©¤ 0x950830b9
@@ -2985,7 +2985,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -3016,7 +3016,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -3046,9 +3046,9 @@ Entries: 8422
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_engine_init_args_get_is_multi_renderer_process(_ark_web_engine_init_args_t*) (.llvm.4476414489740328405)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:78]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::Get(_ark_web_engine_init_args_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsImpl::GetIsMultiRendererProcess()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_init_args_impl.cpp:58]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ 0x950eb735
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ 0x950efdad
@@ -3061,7 +3061,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -3080,85 +3080,85 @@ Entries: 8422
             ©¦  ©¸©¤ 0x950830b9
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructDecreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:208]
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:177]
-            ©¦     ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦     ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©¦     ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsImpl::~ArkWebEngineInitArgsImpl()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_init_args_impl.h:30]
             ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsCppToC::~ArkWebEngineInitArgsCppToC()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:178]
             ©¦        ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsCppToC::~ArkWebEngineInitArgsCppToC()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:178]
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_nweb_create_info_get_engine_init_args(_ark_web_nweb_create_info_t*) (.llvm.1491401356720055696)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_nweb_create_info_cpptoc.cpp:71]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebNWebCreateInfoCppToC, OHOS::ArkWeb::ArkWebNWebCreateInfo, _ark_web_nweb_create_info_t>::Get(_ark_web_nweb_create_info_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebNWebCreateInfoImpl::GetEngineInitArgs()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_create_info_impl.cpp:55]
             ©¦  ©¦  ©À©¤ libarkweb_core_loader.z.so!OHOS::NWeb::NWebCreateInfoImpl::GetEngineInitArgs()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_nweb/include/nweb_init_params.h:114]
             ©¦  ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsImpl::ArkWebEngineInitArgsImpl(std::__h::shared_ptr<OHOS::NWeb::NWebEngineInitArgs>)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_init_args_impl.cpp:25]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
-            ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
-            ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
+            ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
+            ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsCppToC::ArkWebEngineInitArgsCppToC()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:143]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:166]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26] (¡Á2)
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const (¡Á2)
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructIncreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:193]
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:166]
-            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructDecreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:208]
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:177]
-            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructIncreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:193] (¡Á2)
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:166] (¡Á2)
-            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26] (¡Á2)
+            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const (¡Á2)
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::StructDecreRef(_ark_web_base_ref_counted_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:208] (¡Á2)
             ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebImageInfoCallbackCppToC, OHOS::ArkWeb::ArkWebImageInfoCallback, _ark_web_image_info_callback_t>::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:177] (¡Á2)
-            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26] (¡Á2)
+            ©¦     ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const (¡Á2)
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_engine_init_args_get_is_enhance_surface(_ark_web_engine_init_args_t*) (.llvm.4476414489740328405)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:69]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::Get(_ark_web_engine_init_args_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsImpl::GetIsEnhanceSurface()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_init_args_impl.cpp:53]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!ark_web_nweb_webview_check_func_static  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_webview_bridge_helper.cpp:68]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebStringStructToClass(ArkWebString const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:71]
             ©¦  ©¸©¤ libarkweb_glue_base.z.so!OHOS::ArkWeb::ArkWebBridgeHelper::CheckFuncMemberForCalled(ArkWebBridgeType, std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/bridge/ark_web_bridge_helper.cpp:146]
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_nweb_create_info_get_producer_surface(_ark_web_nweb_create_info_t*) (.llvm.1491401356720055696)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_nweb_create_info_cpptoc.cpp:53]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebNWebCreateInfoCppToC, OHOS::ArkWeb::ArkWebNWebCreateInfo, _ark_web_nweb_create_info_t>::Get(_ark_web_nweb_create_info_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebNWebCreateInfoImpl::GetProducerSurface()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_create_info_impl.cpp:45]
             ©¦  ©¦  ©¸©¤ libarkweb_core_loader.z.so!OHOS::NWeb::NWebCreateInfoImpl::GetProducerSurface()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_nweb/include/nweb_init_params.h:94]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_nweb_create_info_get_width(_ark_web_nweb_create_info_t*) (.llvm.1491401356720055696)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_nweb_create_info_cpptoc.cpp:26]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebNWebCreateInfoCppToC, OHOS::ArkWeb::ArkWebNWebCreateInfo, _ark_web_nweb_create_info_t>::Get(_ark_web_nweb_create_info_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebNWebCreateInfoImpl::GetWidth()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_create_info_impl.cpp:30]
             ©¦  ©¦  ©¸©¤ libarkweb_core_loader.z.so!OHOS::NWeb::NWebCreateInfoImpl::GetWidth()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_nweb/include/nweb_init_params.h:64]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_nweb_create_info_get_height(_ark_web_nweb_create_info_t*) (.llvm.1491401356720055696)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_nweb_create_info_cpptoc.cpp:35]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebNWebCreateInfoCppToC, OHOS::ArkWeb::ArkWebNWebCreateInfo, _ark_web_nweb_create_info_t>::Get(_ark_web_nweb_create_info_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebNWebCreateInfoImpl::GetHeight()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_create_info_impl.cpp:35]
             ©¦  ©¦  ©¸©¤ libarkweb_core_loader.z.so!OHOS::NWeb::NWebCreateInfoImpl::GetHeight()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_nweb/include/nweb_init_params.h:74]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!ark_web_nweb_webview_check_func_static  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_webview_bridge_helper.cpp:68]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebStringStructToClass(ArkWebString const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:71]
             ©¦  ©¸©¤ libarkweb_glue_base.z.so!OHOS::ArkWeb::ArkWebBridgeHelper::CheckFuncMemberForCalled(ArkWebBridgeType, std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/bridge/ark_web_bridge_helper.cpp:146]
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_engine_init_args_get_is_popup(_ark_web_engine_init_args_t*) (.llvm.4476414489740328405)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:24]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::Get(_ark_web_engine_init_args_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsImpl::GetIsPopup()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_init_args_impl.cpp:28]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ libarkweb_core_loader_glue.z.so!ark_web_nweb_webview_check_func_static  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_nweb_webview_bridge_helper.cpp:68]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebStringStructToClass(ArkWebString const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:71]
             ©¦  ©¸©¤ libarkweb_glue_base.z.so!OHOS::ArkWeb::ArkWebBridgeHelper::CheckFuncMemberForCalled(ArkWebBridgeType, std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/bridge/ark_web_bridge_helper.cpp:146]
             ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::(anonymous namespace)::ark_web_engine_init_args_get_shared_render_process_token(_ark_web_engine_init_args_t*) (.llvm.4476414489740328405)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/cpptoc/ark_web_engine_init_args_cpptoc.cpp:87]
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebCppToCRefCounted<OHOS::ArkWeb::ArkWebEngineInitArgsCppToC, OHOS::ArkWeb::ArkWebEngineInitArgs, _ark_web_engine_init_args_t>::Get(_ark_web_engine_init_args_t*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/cpptoc/ark_web_cpptoc_ref_counted.h:87]
-            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::IncreRef() const
             ©¦  ©À©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebEngineInitArgsImpl::GetSharedRenderProcessToken()  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_engine_init_args_impl.cpp:63]
             ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringClassToStruct(std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:52]
-            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/ohos_nweb/bridge/ark_web_accessibility_event_callback_impl.h:26]
+            ©¦  ©¸©¤ libarkweb_core_loader_glue.z.so!OHOS::ArkWeb::ArkWebImageInfoCallbackImpl::DecreRef() const
             ©À©¤ 0x950afbd9
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebStringStructToClass(ArkWebString const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:71]
             ©¦  ©¸©¤ libarkweb_glue_base.z.so!OHOS::ArkWeb::ArkWebBridgeHelper::CheckFuncMemberForCalled(ArkWebBridgeType, std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/bridge/ark_web_bridge_helper.cpp:146]
@@ -3166,7 +3166,7 @@ Entries: 8422
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ 0x950efdad
             ©¦  ©¦  ©¸©¤ 0x95083081
-            ©¦  ©À©¤ 0x9509faa1
+            ©¦  ©À©¤ 2500459169
             ©¦  ©¦  ©À©¤ 0x9fcace6d
             ©¦  ©¦  ©À©¤ 0x9508e965
             ©¦  ©¦  ©¸©¤ 0x9508262d
@@ -3305,7 +3305,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -3531,7 +3531,7 @@ Entries: 8422
             ©À©¤ 0x950afbd9
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebStringStructToClass(ArkWebString const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:71]
             ©¦  ©¸©¤ libarkweb_glue_base.z.so!OHOS::ArkWeb::ArkWebBridgeHelper::CheckFuncMemberForCalled(ArkWebBridgeType, std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/bridge/ark_web_bridge_helper.cpp:146]
-            ©À©¤ 0x950cd8c9 (¡Á2)
+            ©À©¤ 2500647113 (¡Á2)
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ 0x950cdce9
             ©¦  ©¦  ©¸©¤ 0x9508262d
@@ -3545,12 +3545,12 @@ Entries: 8422
             ©¦  ©¦  ©À©¤ 0x9508fbb9
             ©¦  ©¦  ©¦  ©¸©¤ 0x9512ed45
             ©¦  ©¦  ©¦     ©¸©¤ 0x950cde0d
-            ©¦  ©¦  ©À©¤ 0x9512ed8d
+            ©¦  ©¦  ©À©¤ 2501045645
             ©¦  ©¦  ©¦  ©¸©¤ 0x950cde0d
-            ©¦  ©¦  ©¸©¤ 0x9fc4aaad
+            ©¦  ©¦  ©¸©¤ 2680466093
             ©¦  ©¦     ©À©¤ 0x9fc4a7d9
             ©¦  ©¦     ©¸©¤ 0x9fc2b4cd
-            ©¦  ©À©¤ 0x9512ed8d
+            ©¦  ©À©¤ 2501045645
             ©¦  ©¦  ©¸©¤ 0x950cde0d
             ©¦  ©À©¤ 0x95082665
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
@@ -3566,12 +3566,12 @@ Entries: 8422
             ©¦  ©¦  ©À©¤ 0x9508fbb9
             ©¦  ©¦  ©¦  ©¸©¤ 0x9512ed45
             ©¦  ©¦  ©¦     ©¸©¤ 0x950cde0d
-            ©¦  ©¦  ©À©¤ 0x9512ed8d
+            ©¦  ©¦  ©À©¤ 2501045645
             ©¦  ©¦  ©¦  ©¸©¤ 0x950cde0d
-            ©¦  ©¦  ©¸©¤ 0x9fc4aaad
+            ©¦  ©¦  ©¸©¤ 2680466093
             ©¦  ©¦     ©À©¤ 0x9fc4a7d9
             ©¦  ©¦     ©¸©¤ 0x9fc2b4cd
-            ©¦  ©À©¤ 0x9512ed8d
+            ©¦  ©À©¤ 2501045645
             ©¦  ©¦  ©¸©¤ 0x950cde0d
             ©¦  ©¸©¤ 0x95082665
             ©À©¤ 0x950eb515
@@ -4081,7 +4081,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950e9239
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©À©¤ 0x9509f22d
-            ©¦  ©¦  ©À©¤ 0x9fcaa139
+            ©¦  ©¦  ©À©¤ 2680856889
             ©¦  ©¦  ©¦  ©À©¤ 0x9fca980d (¡Á2)
             ©¦  ©¦  ©¦  ©¸©¤ 0x9fca99b9 (¡Á2)
             ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringClassToStruct(std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:52] (¡Á3)
@@ -4111,7 +4111,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950e9239
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©À©¤ 0x9509f22d
-            ©¦  ©¦  ©À©¤ 0x9fcaa139
+            ©¦  ©¦  ©À©¤ 2680856889
             ©¦  ©¦  ©¦  ©À©¤ 0x9fca980d (¡Á2)
             ©¦  ©¦  ©¦  ©¸©¤ 0x9fca99b9 (¡Á2)
             ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringClassToStruct(std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:52] (¡Á3)
@@ -4141,7 +4141,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950e9239
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©À©¤ 0x9509f22d
-            ©¦  ©¦  ©À©¤ 0x9fcaa139
+            ©¦  ©¦  ©À©¤ 2680856889
             ©¦  ©¦  ©¦  ©À©¤ 0x9fca980d (¡Á2)
             ©¦  ©¦  ©¦  ©¸©¤ 0x9fca99b9 (¡Á2)
             ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringClassToStruct(std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:52] (¡Á3)
@@ -4171,7 +4171,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950e9239
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©À©¤ 0x9509f22d
-            ©¦  ©¦  ©À©¤ 0x9fcaa139
+            ©¦  ©¦  ©À©¤ 2680856889
             ©¦  ©¦  ©¦  ©À©¤ 0x9fca980d (¡Á2)
             ©¦  ©¦  ©¦  ©¸©¤ 0x9fca99b9 (¡Á2)
             ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringClassToStruct(std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:52] (¡Á3)
@@ -4201,7 +4201,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950e9239
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©À©¤ 0x9509f22d
-            ©¦  ©¦  ©À©¤ 0x9fcaa139
+            ©¦  ©¦  ©À©¤ 2680856889
             ©¦  ©¦  ©¦  ©À©¤ 0x9fca980d (¡Á2)
             ©¦  ©¦  ©¦  ©¸©¤ 0x9fca99b9 (¡Á2)
             ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringClassToStruct(std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:52] (¡Á3)
@@ -4231,7 +4231,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950e9239
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©À©¤ 0x9509f22d
-            ©¦  ©¦  ©À©¤ 0x9fcaa139
+            ©¦  ©¦  ©À©¤ 2680856889
             ©¦  ©¦  ©¦  ©À©¤ 0x9fca980d (¡Á2)
             ©¦  ©¦  ©¦  ©¸©¤ 0x9fca99b9 (¡Á2)
             ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringClassToStruct(std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:52] (¡Á3)
@@ -4261,7 +4261,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950e9239
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©À©¤ 0x9509f22d
-            ©¦  ©¦  ©À©¤ 0x9fcaa139
+            ©¦  ©¦  ©À©¤ 2680856889
             ©¦  ©¦  ©¦  ©À©¤ 0x9fca980d (¡Á2)
             ©¦  ©¦  ©¦  ©¸©¤ 0x9fca99b9 (¡Á2)
             ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringClassToStruct(std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:52] (¡Á3)
@@ -4291,7 +4291,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950e9239
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©À©¤ 0x9509f22d
-            ©¦  ©¦  ©À©¤ 0x9fcaa139
+            ©¦  ©¦  ©À©¤ 2680856889
             ©¦  ©¦  ©¦  ©À©¤ 0x9fca980d (¡Á2)
             ©¦  ©¦  ©¦  ©¸©¤ 0x9fca99b9 (¡Á2)
             ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringClassToStruct(std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:52] (¡Á3)
@@ -4321,7 +4321,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950e9239
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©À©¤ 0x9509f22d
-            ©¦  ©¦  ©À©¤ 0x9fcaa139
+            ©¦  ©¦  ©À©¤ 2680856889
             ©¦  ©¦  ©¦  ©À©¤ 0x9fca980d (¡Á2)
             ©¦  ©¦  ©¦  ©¸©¤ 0x9fca99b9 (¡Á2)
             ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringClassToStruct(std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:52] (¡Á3)
@@ -4351,7 +4351,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950e9239
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©À©¤ 0x9509f22d
-            ©¦  ©¦  ©À©¤ 0x9fcaa139
+            ©¦  ©¦  ©À©¤ 2680856889
             ©¦  ©¦  ©¦  ©À©¤ 0x9fca980d (¡Á2)
             ©¦  ©¦  ©¦  ©¸©¤ 0x9fca99b9 (¡Á2)
             ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringClassToStruct(std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:52] (¡Á3)
@@ -4381,7 +4381,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950e9239
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©À©¤ 0x9509f22d
-            ©¦  ©¦  ©À©¤ 0x9fcaa139
+            ©¦  ©¦  ©À©¤ 2680856889
             ©¦  ©¦  ©¦  ©À©¤ 0x9fca980d (¡Á2)
             ©¦  ©¦  ©¦  ©¸©¤ 0x9fca99b9 (¡Á2)
             ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringClassToStruct(std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:52] (¡Á3)
@@ -4411,7 +4411,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950e9239
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©À©¤ 0x9509f22d
-            ©¦  ©¦  ©À©¤ 0x9fcaa139
+            ©¦  ©¦  ©À©¤ 2680856889
             ©¦  ©¦  ©¦  ©À©¤ 0x9fca980d (¡Á2)
             ©¦  ©¦  ©¦  ©¸©¤ 0x9fca99b9 (¡Á2)
             ©¦  ©¦  ©¸©¤ libarkweb_glue_base.z.so!ArkWebStringClassToStruct(std::__h::basic_string<char, std::__h::char_traits<char>, std::__h::allocator<char>> const&)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_types.cpp:52] (¡Á3)
@@ -4489,8 +4489,8 @@ Entries: 8422
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©À©¤ 0x9509f1d1
             ©¦  ©¦  ©¸©¤ 0x9fca9c6d
-            ©¦  ©¦     ©À©¤ 0x9fcaa595
-            ©¦  ©¦     ©¦  ©À©¤ 0x9fcaa139
+            ©¦  ©¦     ©À©¤ 2680858005
+            ©¦  ©¦     ©¦  ©À©¤ 2680856889
             ©¦  ©¦     ©¦  ©¦  ©À©¤ 0x9fca980d (¡Á2)
             ©¦  ©¦     ©¦  ©¦  ©¸©¤ 0x9fca99b9 (¡Á2)
             ©¦  ©¦     ©¦  ©À©¤ 0x9fc48d59
@@ -4518,18 +4518,18 @@ Entries: 8422
             ©¦  ©¦     ©¦  ©¦     ©¸©¤ libarkweb_glue_base.z.so!ArkWebMemFree(void*)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_memory.cpp:21]
             ©¦  ©¦     ©¦  ©¸©¤ 0x9fc47349
             ©¦  ©¦     ©¦     ©¸©¤ 0x9fc47381
-            ©¦  ©¦     ©À©¤ 0x9fcaa72d
+            ©¦  ©¦     ©À©¤ 2680858413
             ©¦  ©¦     ©¦  ©¸©¤ 0x9fca923d
             ©¦  ©¦     ©À©¤ 0x9fc3f205
-            ©¦  ©¦     ©¸©¤ 0x9fcaa7e5
-            ©¦  ©¦        ©À©¤ 0x9fcaa96d (¡Á3)
+            ©¦  ©¦     ©¸©¤ 2680858597
+            ©¦  ©¦        ©À©¤ 2680858989 (¡Á3)
             ©¦  ©¦        ©¸©¤ 0x9fc2bb2d (¡Á3)
             ©¦  ©¸©¤ 0x950830b9
             ©À©¤ 0x950ea0f1
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ 0x950efdad
             ©¦  ©¦  ©¸©¤ 0x95083081
-            ©¦  ©À©¤ 0x9509faa1
+            ©¦  ©À©¤ 2500459169
             ©¦  ©¦  ©À©¤ 0x9fcace6d
             ©¦  ©¦  ©À©¤ 0x9508e965
             ©¦  ©¦  ©¸©¤ 0x9508262d
@@ -4792,14 +4792,14 @@ Entries: 8422
             ©¦     ©¦  ©¸©¤ 0x9508cd69
             ©¦     ©¦     ©À©¤ 0x9fc45589
             ©¦     ©¦     ©¦  ©¸©¤ 0x9fc43de1
-            ©¦     ©¦     ©¸©¤ 0x9fc2baa1
+            ©¦     ©¦     ©¸©¤ 2680339105
             ©¦     ©À©¤ 0x950c5f69
             ©¦     ©¦  ©¸©¤ 0x950c5f45
             ©¦     ©À©¤ 0x95082665
             ©¦     ©¦  ©¸©¤ 0x9508cd69
             ©¦     ©¦     ©À©¤ 0x9fc45589
             ©¦     ©¦     ©¦  ©¸©¤ 0x9fc43de1
-            ©¦     ©¦     ©¸©¤ 0x9fc2baa1
+            ©¦     ©¦     ©¸©¤ 2680339105
             ©¦     ©¸©¤ 0x950c5f69
             ©¦        ©¸©¤ 0x950c5f45
             ©À©¤ 0x950c757d
@@ -4839,7 +4839,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -4854,7 +4854,7 @@ Entries: 8422
             ©¦  ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
             ©¦  ©À©¤ 0x95110c5d
             ©¦  ©¦  ©¸©¤ 0x95083081
-            ©¦  ©À©¤ 0x950ad8f9
+            ©¦  ©À©¤ 2500516089
             ©¦  ©¦  ©À©¤ 0x9fcc0a15
             ©¦  ©¦  ©¦  ©À©¤ 0x9fcbfb5d
             ©¦  ©¦  ©¦  ©¦  ©¸©¤ 0x9fc2b4cd
@@ -4875,7 +4875,7 @@ Entries: 8422
             ©¦  ©À©¤ 0x950b0bf1
             ©¦  ©¦  ©¸©¤ 0x95083081
             ©¦  ©¸©¤ 0x950830b9 (¡Á2)
-            ©À©¤ 0x95110d81
+            ©À©¤ 2500922753
             ©¦  ©¸©¤ 0x950b0bf1
             ©¦     ©¸©¤ 0x95083081
             ©À©¤ 0x95110e8d (¡Á2)
@@ -4887,7 +4887,7 @@ Entries: 8422
                ©À©¤ libarkweb_glue_base.z.so!ArkWebSetErrno(ArkWebInterfaceResult)  [/home/yanghaidong/ophar/out/rk3568/gen/base/web/webview/ohos_glue/base/include/ark_web_errno.cpp:23]
                ©À©¤ 0x95110c5d
                ©¦  ©¸©¤ 0x95083081
-               ©¸©¤ 0x950ad8f9
+               ©¸©¤ 2500516089
                   ©¸©¤ 0x9fcc0a15
                      ©À©¤ 0x9fcbfb5d
                      ©¦  ©¸©¤ 0x9fc2b4cd
