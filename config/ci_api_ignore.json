@@ -2,7 +2,8 @@
   "sdk-js": [
     "**/*.md",
     "api/config/",
-    "api/form/"
+    "api/form/",
+    "zh-cn/api/"
   ],
   "sdk_c": [
     "**/*.md",
