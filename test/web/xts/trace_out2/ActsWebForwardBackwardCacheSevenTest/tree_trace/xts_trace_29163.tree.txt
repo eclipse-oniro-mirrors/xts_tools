@@ -1,0 +1,14 @@
+Trace:  xts_trace_29163.txt
+Binary: /system/bin/appspawn
+PID:    29163
+Entries: 22
+============================================================
+
+└─ libarkweb_utils.z.so!0xef28a0e5
+   └─ libarkweb_utils.z.so!0xef28a125
+      ├─ libarkweb_utils.z.so!0xef289fdd
+      ├─ libarkweb_utils.z.so!0xef289f15
+      ├─ libarkweb_utils.z.so!0xef28a1ad
+      │  └─ libarkweb_utils.z.so!0xef28a1b1
+      └─ libarkweb_utils.z.so!0xef28a1b5
+         └─ libarkweb_utils.z.so!0xef28a1b9
