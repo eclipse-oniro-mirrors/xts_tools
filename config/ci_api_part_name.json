@@ -343,7 +343,41 @@
             }
         },
         {
+            "path": "interface/sdk-js/sdk_copy_dependencies.py",
+            "bundle_name": [
+                "sdk"
+            ],
+            "build_targets": {
+                "acts": [
+                    "xts_acts"
+                ],
+                "dcts": [
+                    "xts_dcts"
+                ],
+                "hats": [
+                    "xts_hats"
+                ]
+            }
+        },
+        {
             "path": "interface/sdk-js/remove_internal.py",
+            "bundle_name": [
+                "sdk"
+            ],
+            "build_targets": {
+                "acts": [
+                    "xts_acts"
+                ],
+                "dcts": [
+                    "xts_dcts"
+                ],
+                "hats": [
+                    "xts_hats"
+                ]
+            }
+        },
+        {
+            "path": "interface/sdk-js/remove_internal.pydeps",
             "bundle_name": [
                 "sdk"
             ],
