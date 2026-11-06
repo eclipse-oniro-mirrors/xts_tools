@@ -257,8 +257,10 @@ class OpenSourceBuild(XtsAccurateBuild):
         super().__init__(code_base, args, suite_name)
 
     def _process_args(self):
+        # The fast phase must use the same SDK configuration as GN generation.
+        # Dropping SDK options here can replace a static SDK with a dynamic one.
         prod_name = ""
-        rtrim_idx, shift = -1, False
+        shift = False
 
         for idx, arg in enumerate(self.args):
             if shift:
@@ -270,13 +272,8 @@ class OpenSourceBuild(XtsAccurateBuild):
             elif arg == "--product-name":
                 prod_name = self.args[idx + 1]
                 shift = True
-            elif arg == "--prebuilts-sdk-gn-args":
-                rtrim_idx = idx
-                break
 
         self.out_path = os.path.join(self.out_path, prod_name)
-        if rtrim_idx != -1:
-            self.args = self.args[0:rtrim_idx]
 
     def _calc_immuned_targets(self) -> set[str]:
         return XtsAccurateBuildUtil.calc_immuned_targets(self)
