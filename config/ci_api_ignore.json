@@ -3,7 +3,8 @@
     "**/*.md",
     "api/config/",
     "api/form/",
-    "zh-cn/api/"
+    "zh-cn/api/",
+    "docs/"
   ],
   "sdk_c": [
     "**/*.md",
