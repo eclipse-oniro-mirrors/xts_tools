@@ -7977,6 +7977,13 @@
             "build_targets": {}
         },
         {
+            "path": "interface/sdk-js/api/@ohos.arkui.advanced.ToolBarContainer.d.ets",
+            "bundle_name": [
+                "ace_engine"
+            ],
+            "build_targets": {}
+        },
+        {
             "path": "interface/sdk-js/api/@system.file.d.ts",
             "bundle_name": [
                 "file_api"
