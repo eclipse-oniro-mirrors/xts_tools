@@ -7963,6 +7963,13 @@
             "build_targets": {}
         },
         {
+            "path": "interface/sdk-js/api/@ohos.arkui.advanced.ToolBarContainer.d.ets",
+            "bundle_name": [
+                "ace_engine"
+            ],
+            "build_targets": {}
+        },
+        {
             "path": "interface/sdk-js/api/@ohos.arkui.advanced.ToolBarV2.static.d.ets",
             "bundle_name": [
                 "ace_engine"
@@ -7971,13 +7978,6 @@
         },
         {
             "path": "interface/sdk-js/zh-cn/api/@ohos.arkui.advanced.ToolBarV2.static.d.ets",
-            "bundle_name": [
-                "ace_engine"
-            ],
-            "build_targets": {}
-        },
-        {
-            "path": "interface/sdk-js/api/@ohos.arkui.advanced.ToolBarContainer.d.ets",
             "bundle_name": [
                 "ace_engine"
             ],
