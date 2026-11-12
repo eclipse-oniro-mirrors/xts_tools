@@ -11,9 +11,7 @@
     "LICENSE",
     "docs/",
     "patches/patches.json",
-    "zh-cn/multimedia/",
-    "zh-cn/network/",
-    "zh-cn/ai/"
+    "zh-cn/"
   ],
   "driver_interface": [
     "**/*.md",
