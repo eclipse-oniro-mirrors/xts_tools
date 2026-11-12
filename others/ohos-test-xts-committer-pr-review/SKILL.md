@@ -1,5 +1,5 @@
 ---
-name: pr-review
+name: ohos-test-xts-committer-pr-review
 description: >
   Review GitCode PRs (Pull Requests) and submit diff-level review comments on specific code lines.
   Use this skill when the user asks to review/inspect a GitCode PR, add review comments on file changes,
