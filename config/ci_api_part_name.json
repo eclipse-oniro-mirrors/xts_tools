@@ -1,6 +1,27 @@
 {
     "sdk-js": [
         {
+            "path": "interface/sdk-js/api/@ohos.meminfo.d.ts",
+            "bundle_name": [
+                "memmgr"
+            ],
+            "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/zh-cn/api/@ohos.meminfo.d.ts",
+            "bundle_name": [
+                "memmgr"
+            ],
+            "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/kits/@kit.KernelEnhanceKit.d.ts",
+            "bundle_name": [
+                "memmgr"
+            ],
+            "build_targets": {}
+        },
+        {
             "path": "interface/sdk-js/build-tools/delete_unpublished_plugin.js",
             "bundle_name": [
                 "sdk"
