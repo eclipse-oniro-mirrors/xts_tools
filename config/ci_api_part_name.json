@@ -12522,6 +12522,20 @@
                 "ace_engine"
             ],
             "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/api/@ohos.app.ability.ShowParams.d.ts",
+            "bundle_name": [
+                "ability_runtime"
+            ],
+            "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/zh-cn/api/@ohos.app.ability.ShowParams.d.ts",
+            "bundle_name": [
+                "ability_runtime"
+            ],
+            "build_targets": {}
         }
     ],
     "sdk_c": [
