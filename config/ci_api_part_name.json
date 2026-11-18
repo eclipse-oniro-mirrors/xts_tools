@@ -13541,6 +13541,13 @@
             "build_targets": {}
         },
         {
+            "path": "drivers/interface/ethernet",
+            "bundle_name": [
+                "drivers_interface_ethernet"
+            ],
+            "build_targets": {}
+        },
+        {
             "path": "drivers/interface/nearlink",
             "bundle_name": [
                 "drivers_interface_nearlink"
