@@ -29,6 +29,13 @@
             "build_targets": {}
         },
         {
+            "path": "interface/sdk-js/build-tools/extension_blocklist.json",
+            "bundle_name": [
+                "sdk"
+            ],
+            "build_targets": {}
+        },
+        {
             "path": "interface/sdk-js/copy_runtimeapi.py",
             "bundle_name": [
                 "sdk"
