@@ -23224,6 +23224,20 @@
                 "drivers_interface_nearlink"
             ],
             "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/api/@ohos.arkui.colorPickerController.d.ts",
+            "bundle_name": [
+                "ace_engine"
+            ],
+            "build_targets": {}
+        },
+        {
+            "path": "interface/sdk-js/api/@ohos.arkui.colorPickerController.static.d.ets",
+            "bundle_name": [
+                "ace_engine"
+            ],
+            "build_targets": {}
         }
 
     ]
